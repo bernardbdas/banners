@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1584" height="396" viewBox="0 0 1584 396">
+  <defs>
+    <linearGradient id="bgGrad_pastel_geometry" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#F1F5F9" />
+    </linearGradient>
+    <linearGradient id="cardGrad_pastel_geometry" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.90" />
+      <stop offset="100%" stop-color="#F8FAFC" stop-opacity="0.80" />
+    </linearGradient>
+    <linearGradient id="accentGlow_pastel_geometry" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#6366F1" />
+    </linearGradient>
+    <filter id="cardShadow_pastel_geometry" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#64748B" flood-opacity="0.12" />
+    </filter>
+    <linearGradient id="geom_base" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDF4FF" />
+      <stop offset="50%" stop-color="#EFF6FF" />
+      <stop offset="100%" stop-color="#F5F3FF" />
+    </linearGradient>
+<linearGradient id="geom_accent1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C084FC" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#60A5FA" stop-opacity="0.15" />
+    </linearGradient>
+<linearGradient id="geom_accent2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F472B6" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#FB7185" stop-opacity="0.1" />
+    </linearGradient>
+  </defs>
+  <!-- Custom Background -->
+  <rect width="1584" height="396" fill="url(#geom_base)" />
+  <g id="pattern_layer" opacity="1.00">
+    <circle cx="1420" cy="100" r="130" fill="none" stroke="#A855F7" stroke-width="2" stroke-opacity="0.15" />
+  <circle cx="1420" cy="100" r="90" fill="none" stroke="#60A5FA" stroke-width="1.5" stroke-opacity="0.2" />
+  <circle cx="1420" cy="100" r="50" fill="url(#geom_accent1)" />
+  <circle cx="220" cy="300" r="160" fill="none" stroke="#F472B6" stroke-width="2" stroke-opacity="0.15" />
+  <circle cx="220" cy="300" r="110" fill="none" stroke="#818CF8" stroke-width="1.5" stroke-opacity="0.18" />
+  <rect x="1100" y="40" width="140" height="40" rx="20" fill="url(#geom_accent1)" transform="rotate(-25 1170 60)" />
+  <rect x="750" y="320" width="160" height="44" rx="22" fill="url(#geom_accent2)" transform="rotate(-15 830 342)" />
+  <rect x="1350" y="280" width="120" height="36" rx="18" fill="url(#geom_accent1)" transform="rotate(30 1410 298)" />
+  <g stroke="#94A3B8" stroke-width="1.5" stroke-opacity="0.35">
+    <path d="M 600 60 L 616 60 M 608 52 L 608 68" />
+    <path d="M 980 90 L 996 90 M 988 82 L 988 98" />
+    <path d="M 1250 220 L 1266 220 M 1258 212 L 1258 228" />
+    <path d="M 400 320 L 416 320 M 408 312 L 408 328" />
+  </g>
+  </g>
+  <!-- Top Accent Bar -->
+  <rect x="0" y="0" width="1584" height="3.5" fill="url(#accentGlow_pastel_geometry)" />
+
+  <!-- Typography: Header & Subtitle -->
+  <text x="520" y="96" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="48" font-weight="800" fill="#0F172A" letter-spacing="1.5">Machine Learning Engineer</text>
+  <text x="520" y="138" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="500" fill="#334155" letter-spacing="0.5">Deep Neural Networks • Distributed Training • High-Performance Inference</text>
+
+  <!-- Tech Stack Container Bar -->
+  <!-- Python Badge -->
+  <g transform="translate(520, 170)">
+    <rect width="100" height="100" rx="16" fill="url(#cardGrad_pastel_geometry)" stroke="#E2E8F0" stroke-width="1" filter="url(#cardShadow_pastel_geometry)" />
+    <svg x="22.0" y="13.0" width="56.0" height="56.0" viewBox="0 0 128 128">
+      <linearGradient id="b0_python-original-a" gradientUnits="userSpaceOnUse" x1="70.252" y1="1237.476" x2="170.659" y2="1151.089" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"><stop offset="0" stop-color="#5A9FD4"/><stop offset="1" stop-color="#306998"/></linearGradient><linearGradient id="b0_python-original-b" gradientUnits="userSpaceOnUse" x1="209.474" y1="1098.811" x2="173.62" y2="1149.537" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"><stop offset="0" stop-color="#FFD43B"/><stop offset="1" stop-color="#FFE873"/></linearGradient><path fill="url(#b0_python-original-a)" d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521-2.268 9.405-2.368 15.275 0 25.096 1.755 7.311 5.947 12.519 13.124 12.519h8.491V67.234c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.837-4.244-.706-8.645-1.027-12.866-1.008zM50.037 9.557c2.55 0 4.634 2.117 4.634 4.721 0 2.593-2.083 4.69-4.634 4.69-2.56 0-4.633-2.097-4.633-4.69-.001-2.604 2.073-4.721 4.633-4.721z" transform="translate(0 10.26)"/><path fill="url(#b0_python-original-b)" d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655H51.591c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547 7.816 2.297 15.312 2.713 24.665 0 6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519 2.578-7.735 2.467-15.174 0-25.096-1.774-7.145-5.161-12.521-12.348-12.521h-9.268zM77.809 87.927c2.561 0 4.634 2.097 4.634 4.692 0 2.602-2.074 4.719-4.634 4.719-2.55 0-4.633-2.117-4.633-4.719 0-2.595 2.083-4.692 4.633-4.692z" transform="translate(0 10.26)"/><radialGradient id="b0_python-original-c" cx="1825.678" cy="444.45" r="26.743" gradientTransform="matrix(0 -.24 -1.055 0 532.979 557.576)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#B8B8B8" stop-opacity=".498"/><stop offset="1" stop-color="#7F7F7F" stop-opacity="0"/></radialGradient><path opacity=".444" fill="url(#b0_python-original-c)" d="M97.309 119.597c0 3.543-14.816 6.416-33.091 6.416-18.276 0-33.092-2.873-33.092-6.416 0-3.544 14.815-6.417 33.092-6.417 18.275 0 33.091 2.872 33.091 6.417z"/>
+    </svg>
+    <text x="50.0" y="90.5" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="600" fill="#0F172A" text-anchor="middle">Python</text>
+  </g>
+  <!-- PyTorch Badge -->
+  <g transform="translate(636, 170)">
+    <rect width="100" height="100" rx="16" fill="url(#cardGrad_pastel_geometry)" stroke="#E2E8F0" stroke-width="1" filter="url(#cardShadow_pastel_geometry)" />
+    <svg x="22.0" y="13.0" width="56.0" height="56.0" viewBox="0 0 128 128">
+      <path fill="#EE4C2C" d="M100.1 38.3l-9.2 9.2c15.1 15.1 15.1 39.4 0 54.3-15.1 15.1-39.4 15.1-54.3 0-15.1-15.1-15.1-39.4 0-54.3l24-24 3.4-3.4V2L27.8 38.2C7.7 58.3 7.7 90.8 27.8 111s52.6 20.1 72.4 0c20.1-20.2 20.1-52.5-.1-72.7z"/><circle fill="#EE4C2C" transform="rotate(-88.939 82.069 29.398) scale(.99997)" cx="82.1" cy="29.4" r="6.7"/>
+    </svg>
+    <text x="50.0" y="90.5" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="600" fill="#0F172A" text-anchor="middle">PyTorch</text>
+  </g>
+  <!-- TensorFlow Badge -->
+  <g transform="translate(752, 170)">
+    <rect width="100" height="100" rx="16" fill="url(#cardGrad_pastel_geometry)" stroke="#E2E8F0" stroke-width="1" filter="url(#cardShadow_pastel_geometry)" />
+    <svg x="22.0" y="13.0" width="56.0" height="56.0" viewBox="0 0 128 128">
+      
+  <path d="m61.55 128-21.84-12.68V40.55L6.81 59.56l.08-28.32L61.55 0zM66.46 0v128l21.84-12.68V79.31l16.49 9.53-.1-24.63-16.39-9.36v-14.3l32.89 19.01-.08-28.32z" fill="#ff6f00" />
+
+    </svg>
+    <text x="50.0" y="90.5" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="600" fill="#0F172A" text-anchor="middle">TensorFlow</text>
+  </g>
+  <!-- JAX Badge -->
+  <g transform="translate(868, 170)">
+    <rect width="100" height="100" rx="16" fill="url(#cardGrad_pastel_geometry)" stroke="#E2E8F0" stroke-width="1" filter="url(#cardShadow_pastel_geometry)" />
+    <svg x="15.0" y="20.8" width="70.0" height="40.5" viewBox="0 0 451 260.81">
+      <defs><style>.cls-1{fill:#5e97f6;}.cls-1,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7,.cls-8,.cls-9{stroke:#dce0df;stroke-linejoin:round;}.cls-2{fill:#2a56c6;}.cls-3{fill:#00796b;}.cls-4{fill:#3367d6;}.cls-5{fill:#26a69a;}.cls-6{fill:#9c27b0;}.cls-7{fill:#6a1b9a;}.cls-8{fill:#00695c;}.cls-9{fill:#ea80fc;}</style></defs><title>JAX Light Stroke</title><g id="b3_Layer_2" data-name="Layer 2"><g id="b3_Layer_1-2" data-name="Layer 1"><polygon class="cls-1" points="50.5 130.4 25.5 173.71 75.5 173.71 100.5 130.4 50.5 130.4" fill="#0F172A"/><polygon class="cls-1" points="0.5 217.01 25.5 173.71 75.5 173.71 50.5 217.01 0.5 217.01" fill="#0F172A"/><polygon class="cls-1" points="125.5 173.71 75.5 173.71 50.5 217.01 100.5 217.01 125.5 173.71" fill="#0F172A"/><polygon class="cls-1" points="175.5 173.71 125.5 173.71 100.5 217.01 150.5 217.01 175.5 173.71" fill="#0F172A"/><polygon class="cls-1" points="150.5 130.4 125.5 173.71 175.5 173.71 200.5 130.4 150.5 130.4" fill="#0F172A"/><polygon class="cls-1" points="175.5 87.1 150.5 130.4 200.5 130.4 225.5 87.1 175.5 87.1" fill="#0F172A"/><polygon class="cls-1" points="200.5 43.8 175.5 87.1 225.5 87.1 250.5 43.8 200.5 43.8" fill="#0F172A"/><polygon class="cls-1" points="225.5 0.5 200.5 43.8 250.5 43.8 275.5 0.5 225.5 0.5" fill="#0F172A"/><polygon class="cls-2" points="0.5 217.01 25.5 260.31 75.5 260.31 50.5 217.01 0.5 217.01" fill="#0F172A"/><polygon class="cls-2" points="125.5 260.31 75.5 260.31 50.5 217.01 100.5 217.01 125.5 260.31" fill="#0F172A"/><polygon class="cls-2" points="175.5 260.31 125.5 260.31 100.5 217.01 150.5 217.01 175.5 260.31" fill="#0F172A"/><polygon class="cls-3" points="200.5 217.01 175.5 173.71 150.5 217.01 175.5 260.31 200.5 217.01" fill="#0F172A"/><polygon class="cls-3" points="250.5 130.4 225.5 87.1 200.5 130.4 250.5 130.4" fill="#0F172A"/><polygon class="cls-3" points="250.5 43.8 225.5 87.1 250.5 130.4 275.5 87.1 250.5 43.8" fill="#0F172A"/><polygon class="cls-4" points="125.5 173.71 100.5 130.4 75.5 173.71 125.5 173.71" fill="#0F172A"/><polygon class="cls-5" points="250.5 130.4 200.5 130.4 175.5 173.71 225.5 173.71 250.5 130.4" fill="#0F172A"/><polygon class="cls-5" points="300.5 130.4 250.5 130.4 225.5 173.71 275.5 173.71 300.5 130.4" fill="#0F172A"/><polygon class="cls-6" points="350.5 43.8 325.5 0.5 300.5 43.8 325.5 87.1 350.5 43.8" fill="#0F172A"/><polygon class="cls-6" points="375.5 87.1 350.5 43.8 325.5 87.1 350.5 130.4 375.5 87.1" fill="#0F172A"/><polygon class="cls-6" points="400.5 130.4 375.5 87.1 350.5 130.4 375.5 173.71 400.5 130.4" fill="#0F172A"/><polygon class="cls-6" points="425.5 173.71 400.5 130.4 375.5 173.71 400.5 217.01 425.5 173.71" fill="#0F172A"/><polygon class="cls-6" points="450.5 217.01 425.5 173.71 400.5 217.01 425.5 260.31 450.5 217.01" fill="#0F172A"/><polygon class="cls-6" points="425.5 0.5 400.5 43.8 425.5 87.1 450.5 43.8 425.5 0.5" fill="#0F172A"/><polygon class="cls-6" points="375.5 87.1 400.5 43.8 425.5 87.1 400.5 130.4 375.5 87.1" fill="#0F172A"/><polygon class="cls-6" points="350.5 130.4 325.5 173.71 350.5 217.01 375.5 173.71 350.5 130.4" fill="#0F172A"/><polygon class="cls-6" points="325.5 260.31 300.5 217.01 325.5 173.71 350.5 217.01 325.5 260.31" fill="#0F172A"/><polygon class="cls-7" points="275.5 260.31 250.5 217.01 300.5 217.01 325.5 260.31 275.5 260.31" fill="#0F172A"/><polygon class="cls-8" points="225.5 173.71 175.5 173.71 200.5 217.01 250.5 217.01 225.5 173.71" fill="#0F172A"/><polygon class="cls-8" points="275.5 173.71 225.5 173.71 250.5 217.01 275.5 173.71" fill="#0F172A"/><polygon class="cls-8" points="275.5 87.1 300.5 130.4 350.5 130.4 325.5 87.1 275.5 87.1" fill="#0F172A"/><polygon class="cls-8" points="300.5 43.8 250.5 43.8 275.5 87.1 325.5 87.1 300.5 43.8" fill="#0F172A"/><polygon class="cls-8" points="425.5 260.31 400.5 217.01 350.5 217.01 375.5 260.31 425.5 260.31" fill="#0F172A"/><polygon class="cls-8" points="375.5 173.71 350.5 217.01 400.5 217.01 375.5 173.71" fill="#0F172A"/><polygon class="cls-9" points="325.5 0.5 275.5 0.5 250.5 43.8 300.5 43.8 325.5 0.5" fill="#0F172A"/><polygon class="cls-9" points="325.5 173.71 275.5 173.71 250.5 217.01 300.5 217.01 325.5 173.71" fill="#0F172A"/><polygon class="cls-9" points="350.5 130.4 300.5 130.4 275.5 173.71 325.5 173.71 350.5 130.4" fill="#0F172A"/><polygon class="cls-9" points="425.5 0.5 375.5 0.5 350.5 43.8 400.5 43.8 425.5 0.5" fill="#0F172A"/><polygon class="cls-9" points="375.5 87.1 350.5 43.8 400.5 43.8 375.5 87.1" fill="#0F172A"/></g></g>
+    </svg>
+    <text x="50.0" y="90.5" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="600" fill="#0F172A" text-anchor="middle">JAX</text>
+  </g>
+  <!-- Hugging Face Badge -->
+  <g transform="translate(984, 170)">
+    <rect width="100" height="100" rx="16" fill="url(#cardGrad_pastel_geometry)" stroke="#E2E8F0" stroke-width="1" filter="url(#cardShadow_pastel_geometry)" />
+    <svg x="22.0" y="13.0" width="56.0" height="56.0" viewBox="11 5 73 74">
+      
+	<path fill="#FFD21E" d="M47.21 76.5a34.75 34.75 0 1 0 0-69.5 34.75 34.75 0 0 0 0 69.5Z" />
+	<path
+		fill="#FF9D0B"
+		d="M81.96 41.75a34.75 34.75 0 1 0-69.5 0 34.75 34.75 0 0 0 69.5 0Zm-73.5 0a38.75 38.75 0 1 1 77.5 0 38.75 38.75 0 0 1-77.5 0Z"
+	/>
+	<path
+		fill="#3A3B45"
+		d="M58.5 32.3c1.28.44 1.78 3.06 3.07 2.38a5 5 0 1 0-6.76-2.07c.61 1.15 2.55-.72 3.7-.32ZM34.95 32.3c-1.28.44-1.79 3.06-3.07 2.38a5 5 0 1 1 6.76-2.07c-.61 1.15-2.56-.72-3.7-.32Z"
+	/>
+	<path
+		fill="#FF323D"
+		d="M46.96 56.29c9.83 0 13-8.76 13-13.26 0-2.34-1.57-1.6-4.09-.36-2.33 1.15-5.46 2.74-8.9 2.74-7.19 0-13-6.88-13-2.38s3.16 13.26 13 13.26Z"
+	/>
+	<path
+		fill="#3A3B45"
+		fill-rule="evenodd"
+		d="M39.43 54a8.7 8.7 0 0 1 5.3-4.49c.4-.12.81.57 1.24 1.28.4.68.82 1.37 1.24 1.37.45 0 .9-.68 1.33-1.35.45-.7.89-1.38 1.32-1.25a8.61 8.61 0 0 1 5 4.17c3.73-2.94 5.1-7.74 5.1-10.7 0-2.34-1.57-1.6-4.09-.36l-.14.07c-2.31 1.15-5.39 2.67-8.77 2.67s-6.45-1.52-8.77-2.67c-2.6-1.29-4.23-2.1-4.23.29 0 3.05 1.46 8.06 5.47 10.97Z"
+		clip-rule="evenodd"
+	/>
+	<path
+		fill="#FF9D0B"
+		d="M70.71 37a3.25 3.25 0 1 0 0-6.5 3.25 3.25 0 0 0 0 6.5ZM24.21 37a3.25 3.25 0 1 0 0-6.5 3.25 3.25 0 0 0 0 6.5ZM17.52 48c-1.62 0-3.06.66-4.07 1.87a5.97 5.97 0 0 0-1.33 3.76 7.1 7.1 0 0 0-1.94-.3c-1.55 0-2.95.59-3.94 1.66a5.8 5.8 0 0 0-.8 7 5.3 5.3 0 0 0-1.79 2.82c-.24.9-.48 2.8.8 4.74a5.22 5.22 0 0 0-.37 5.02c1.02 2.32 3.57 4.14 8.52 6.1 3.07 1.22 5.89 2 5.91 2.01a44.33 44.33 0 0 0 10.93 1.6c5.86 0 10.05-1.8 12.46-5.34 3.88-5.69 3.33-10.9-1.7-15.92-2.77-2.78-4.62-6.87-5-7.77-.78-2.66-2.84-5.62-6.25-5.62a5.7 5.7 0 0 0-4.6 2.46c-1-1.26-1.98-2.25-2.86-2.82A7.4 7.4 0 0 0 17.52 48Zm0 4c.51 0 1.14.22 1.82.65 2.14 1.36 6.25 8.43 7.76 11.18.5.92 1.37 1.31 2.14 1.31 1.55 0 2.75-1.53.15-3.48-3.92-2.93-2.55-7.72-.68-8.01.08-.02.17-.02.24-.02 1.7 0 2.45 2.93 2.45 2.93s2.2 5.52 5.98 9.3c3.77 3.77 3.97 6.8 1.22 10.83-1.88 2.75-5.47 3.58-9.16 3.58-3.81 0-7.73-.9-9.92-1.46-.11-.03-13.45-3.8-11.76-7 .28-.54.75-.76 1.34-.76 2.38 0 6.7 3.54 8.57 3.54.41 0 .7-.17.83-.6.79-2.85-12.06-4.05-10.98-8.17.2-.73.71-1.02 1.44-1.02 3.14 0 10.2 5.53 11.68 5.53.11 0 .2-.03.24-.1.74-1.2.33-2.04-4.9-5.2-5.21-3.16-8.88-5.06-6.8-7.33.24-.26.58-.38 1-.38 3.17 0 10.66 6.82 10.66 6.82s2.02 2.1 3.25 2.1c.28 0 .52-.1.68-.38.86-1.46-8.06-8.22-8.56-11.01-.34-1.9.24-2.85 1.31-2.85Z"
+	/>
+	<path
+		fill="#FFD21E"
+		d="M38.6 76.69c2.75-4.04 2.55-7.07-1.22-10.84-3.78-3.77-5.98-9.3-5.98-9.3s-.82-3.2-2.69-2.9c-1.87.3-3.24 5.08.68 8.01 3.91 2.93-.78 4.92-2.29 2.17-1.5-2.75-5.62-9.82-7.76-11.18-2.13-1.35-3.63-.6-3.13 2.2.5 2.79 9.43 9.55 8.56 11-.87 1.47-3.93-1.71-3.93-1.71s-9.57-8.71-11.66-6.44c-2.08 2.27 1.59 4.17 6.8 7.33 5.23 3.16 5.64 4 4.9 5.2-.75 1.2-12.28-8.53-13.36-4.4-1.08 4.11 11.77 5.3 10.98 8.15-.8 2.85-9.06-5.38-10.74-2.18-1.7 3.21 11.65 6.98 11.76 7.01 4.3 1.12 15.25 3.49 19.08-2.12Z"
+	/>
+	<path
+		fill="#FF9D0B"
+		d="M77.4 48c1.62 0 3.07.66 4.07 1.87a5.97 5.97 0 0 1 1.33 3.76 7.1 7.1 0 0 1 1.95-.3c1.55 0 2.95.59 3.94 1.66a5.8 5.8 0 0 1 .8 7 5.3 5.3 0 0 1 1.78 2.82c.24.9.48 2.8-.8 4.74a5.22 5.22 0 0 1 .37 5.02c-1.02 2.32-3.57 4.14-8.51 6.1-3.08 1.22-5.9 2-5.92 2.01a44.33 44.33 0 0 1-10.93 1.6c-5.86 0-10.05-1.8-12.46-5.34-3.88-5.69-3.33-10.9 1.7-15.92 2.78-2.78 4.63-6.87 5.01-7.77.78-2.66 2.83-5.62 6.24-5.62a5.7 5.7 0 0 1 4.6 2.46c1-1.26 1.98-2.25 2.87-2.82A7.4 7.4 0 0 1 77.4 48Zm0 4c-.51 0-1.13.22-1.82.65-2.13 1.36-6.25 8.43-7.76 11.18a2.43 2.43 0 0 1-2.14 1.31c-1.54 0-2.75-1.53-.14-3.48 3.91-2.93 2.54-7.72.67-8.01a1.54 1.54 0 0 0-.24-.02c-1.7 0-2.45 2.93-2.45 2.93s-2.2 5.52-5.97 9.3c-3.78 3.77-3.98 6.8-1.22 10.83 1.87 2.75 5.47 3.58 9.15 3.58 3.82 0 7.73-.9 9.93-1.46.1-.03 13.45-3.8 11.76-7-.29-.54-.75-.76-1.34-.76-2.38 0-6.71 3.54-8.57 3.54-.42 0-.71-.17-.83-.6-.8-2.85 12.05-4.05 10.97-8.17-.19-.73-.7-1.02-1.44-1.02-3.14 0-10.2 5.53-11.68 5.53-.1 0-.19-.03-.23-.1-.74-1.2-.34-2.04 4.88-5.2 5.23-3.16 8.9-5.06 6.8-7.33-.23-.26-.57-.38-.98-.38-3.18 0-10.67 6.82-10.67 6.82s-2.02 2.1-3.24 2.1a.74.74 0 0 1-.68-.38c-.87-1.46 8.05-8.22 8.55-11.01.34-1.9-.24-2.85-1.31-2.85Z"
+	/>
+	<path
+		fill="#FFD21E"
+		d="M56.33 76.69c-2.75-4.04-2.56-7.07 1.22-10.84 3.77-3.77 5.97-9.3 5.97-9.3s.82-3.2 2.7-2.9c1.86.3 3.23 5.08-.68 8.01-3.92 2.93.78 4.92 2.28 2.17 1.51-2.75 5.63-9.82 7.76-11.18 2.13-1.35 3.64-.6 3.13 2.2-.5 2.79-9.42 9.55-8.55 11 .86 1.47 3.92-1.71 3.92-1.71s9.58-8.71 11.66-6.44c2.08 2.27-1.58 4.17-6.8 7.33-5.23 3.16-5.63 4-4.9 5.2.75 1.2 12.28-8.53 13.36-4.4 1.08 4.11-11.76 5.3-10.97 8.15.8 2.85 9.05-5.38 10.74-2.18 1.69 3.21-11.65 6.98-11.76 7.01-4.31 1.12-15.26 3.49-19.08-2.12Z"
+	/>
+
+    </svg>
+    <text x="50.0" y="90.5" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="600" fill="#0F172A" text-anchor="middle">Hugging Face</text>
+  </g>
+  <!-- NVIDIA Badge -->
+  <g transform="translate(1100, 170)">
+    <rect width="100" height="100" rx="16" fill="url(#cardGrad_pastel_geometry)" stroke="#E2E8F0" stroke-width="1" filter="url(#cardShadow_pastel_geometry)" />
+    <svg x="22.0" y="13.0" width="56.0" height="56.0" viewBox="0 0 24 24">
+      <title>NVIDIA</title><path fill="#76B900" d="M8.948 8.798v-1.43a6.7 6.7 0 0 1 .424-.018c3.922-.124 6.493 3.374 6.493 3.374s-2.774 3.851-5.75 3.851c-.398 0-.787-.062-1.158-.185v-4.346c1.528.185 1.837.857 2.747 2.385l2.04-1.714s-1.492-1.952-4-1.952a6.016 6.016 0 0 0-.796.035m0-4.735v2.138l.424-.027c5.45-.185 9.01 4.47 9.01 4.47s-4.08 4.964-8.33 4.964c-.37 0-.733-.035-1.095-.097v1.325c.3.035.61.062.91.062 3.957 0 6.82-2.023 9.593-4.408.459.371 2.34 1.263 2.73 1.652-2.633 2.208-8.772 3.984-12.253 3.984-.335 0-.653-.018-.971-.053v1.864H24V4.063zm0 10.326v1.131c-3.657-.654-4.673-4.46-4.673-4.46s1.758-1.944 4.673-2.262v1.237H8.94c-1.528-.186-2.73 1.245-2.73 1.245s.68 2.412 2.739 3.11M2.456 10.9s2.164-3.197 6.5-3.533V6.201C4.153 6.59 0 10.653 0 10.653s2.35 6.802 8.948 7.42v-1.237c-4.84-.6-6.492-5.936-6.492-5.936z"/>
+    </svg>
+    <text x="50.0" y="90.5" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="600" fill="#0F172A" text-anchor="middle">NVIDIA</text>
+  </g>
+  <!-- C++ Badge -->
+  <g transform="translate(1216, 170)">
+    <rect width="100" height="100" rx="16" fill="url(#cardGrad_pastel_geometry)" stroke="#E2E8F0" stroke-width="1" filter="url(#cardShadow_pastel_geometry)" />
+    <svg x="22.0" y="13.0" width="56.0" height="56.0" viewBox="0 0 128 128">
+      
+  <path fill="#00599c" d="M118.766 95.82c.89-1.543 1.441-3.28 1.441-4.843V36.78c0-1.558-.55-3.297-1.441-4.84l-55.32 31.94Zm0 0"/>
+  <path fill="#004482" d="m68.36 126.586 46.933-27.094c1.352-.781 2.582-2.129 3.473-3.672l-55.32-31.94L8.12 95.82c.89 1.543 2.121 2.89 3.473 3.672l46.933 27.094c2.703 1.562 7.13 1.562 9.832 0Zm0 0"/>
+  <path fill="#659ad2" d="M118.766 31.941c-.891-1.546-2.121-2.894-3.473-3.671L68.359 1.172c-2.703-1.563-7.129-1.563-9.832 0L11.594 28.27C8.89 29.828 6.68 33.66 6.68 36.78v54.196c0 1.562.55 3.3 1.441 4.843L63.445 63.88Zm0 0"/>
+  <path fill="#fff" d="M63.445 26.035c-20.867 0-37.843 16.977-37.843 37.844s16.976 37.844 37.843 37.844c13.465 0 26.024-7.247 32.77-18.91L79.84 73.335c-3.38 5.84-9.66 9.465-16.395 9.465-10.433 0-18.922-8.488-18.922-18.922 0-10.434 8.49-18.922 18.922-18.922 6.73 0 13.017 3.629 16.39 9.465l16.38-9.477c-6.75-11.664-19.305-18.91-32.77-18.91zM92.88 57.57v4.207h-4.207v4.203h4.207v4.207h4.203V65.98h4.203v-4.203h-4.203V57.57H92.88zm15.766 0v4.207h-4.204v4.203h4.204v4.207h4.207V65.98h4.203v-4.203h-4.203V57.57h-4.207z"/>
+
+    </svg>
+    <text x="50.0" y="90.5" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="600" fill="#0F172A" text-anchor="middle">C++</text>
+  </g>
+  <!-- Docker Badge -->
+  <g transform="translate(1332, 170)">
+    <rect width="100" height="100" rx="16" fill="url(#cardGrad_pastel_geometry)" stroke="#E2E8F0" stroke-width="1" filter="url(#cardShadow_pastel_geometry)" />
+    <svg x="22.0" y="13.0" width="56.0" height="56.0" viewBox="0 0 128 128">
+      <path fill-rule="evenodd" clip-rule="evenodd" fill="#3A4D54" d="M73.8 50.8h11.3v11.5h5.7c2.6 0 5.3-.5 7.8-1.3 1.2-.4 2.6-1 3.8-1.7-1.6-2.1-2.4-4.7-2.6-7.3-.3-3.5.4-8.1 2.8-10.8l1.2-1.4 1.4 1.1c3.6 2.9 6.5 6.8 7.1 11.4 4.3-1.3 9.3-1 13.1 1.2l1.5.9-.8 1.6c-3.2 6.2-9.9 8.2-16.4 7.8-9.8 24.3-31 35.8-56.8 35.8-13.3 0-25.5-5-32.5-16.8l-.1-.2-1-2.1c-2.4-5.2-3.1-10.9-2.6-16.6l.2-1.7h9.6V50.8h11.3V39.6h22.5V28.3h13.5v22.5z"/><path fill="#00AADA" d="M110.4 55.1c.8-5.9-3.6-10.5-6.4-12.7-3.1 3.6-3.6 13.2 1.3 17.2-2.8 2.4-8.5 4.7-14.5 4.7H18.6c-.6 6.2.5 11.9 3 16.8l.8 1.5c.5.9 1.1 1.7 1.7 2.6 3 .2 5.7.3 8.2.2 4.9-.1 8.9-.7 12-1.7.5-.2.9.1 1.1.5.2.5-.1.9-.5 1.1-.4.1-.8.3-1.3.4-2.4.7-5 1.1-8.3 1.3h-.6c-1.3.1-2.7.1-4.2.1-1.6 0-3.1 0-4.9-.1 6 6.8 15.4 10.8 27.2 10.8 25 0 46.2-11.1 55.5-35.9 6.7.7 13.1-1 16-6.7-4.5-2.7-10.5-1.8-13.9-.1z"/><path fill="#28B8EB" d="M110.4 55.1c.8-5.9-3.6-10.5-6.4-12.7-3.1 3.6-3.6 13.2 1.3 17.2-2.8 2.4-8.5 4.7-14.5 4.7h-68c-.3 9.5 3.2 16.7 9.5 21 4.9-.1 8.9-.7 12-1.7.5-.2.9.1 1.1.5.2.5-.1.9-.5 1.1-.4.1-.8.3-1.3.4-2.4.7-5.2 1.2-8.5 1.4l-.1-.1c8.5 4.4 20.8 4.3 35-1.1 15.8-6.1 30.6-17.7 40.9-30.9-.2.1-.4.1-.5.2z"/><path fill="#028BB8" d="M18.7 71.8c.4 3.3 1.4 6.4 2.9 9.3l.8 1.5c.5.9 1.1 1.7 1.7 2.6 3 .2 5.7.3 8.2.2 4.9-.1 8.9-.7 12-1.7.5-.2.9.1 1.1.5.2.5-.1.9-.5 1.1-.4.1-.8.3-1.3.4-2.4.7-5.2 1.2-8.5 1.4h-.4c-1.3.1-2.7.1-4.1.1-1.6 0-3.2 0-4.9-.1 6 6.8 15.5 10.8 27.3 10.8 21.4 0 40-8.1 50.8-26H18.7v-.1z"/><path fill="#019BC6" d="M23.5 71.8c1.3 5.8 4.3 10.4 8.8 13.5 4.9-.1 8.9-.7 12-1.7.5-.2.9.1 1.1.5.2.5-.1.9-.5 1.1-.4.1-.8.3-1.3.4-2.4.7-5.2 1.2-8.6 1.4 8.5 4.4 20.8 4.3 34.9-1.1 8.5-3.3 16.8-8.2 24.2-14.1H23.5z"/><path fill-rule="evenodd" clip-rule="evenodd" fill="#00ACD3" d="M28.4 52.7h9.8v9.8h-9.8v-9.8zm.8.8h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm3-12h9.8v9.8h-9.8v-9.8zm.9.8h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1z"/><path fill-rule="evenodd" clip-rule="evenodd" fill="#23C2EE" d="M39.6 52.7h9.8v9.8h-9.8v-9.8zm.9.8h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1z"/><path fill-rule="evenodd" clip-rule="evenodd" fill="#00ACD3" d="M50.9 52.7h9.8v9.8h-9.8v-9.8zm.8.8h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1z"/><path fill-rule="evenodd" clip-rule="evenodd" fill="#23C2EE" d="M50.9 41.5h9.8v9.8h-9.8v-9.8zm.8.8h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm3.1 10.4H72v9.8h-9.8v-9.8zm.8.8h.8v8.1H63v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1z"/><path fill-rule="evenodd" clip-rule="evenodd" fill="#00ACD3" d="M62.2 41.5H72v9.8h-9.8v-9.8zm.8.8h.8v8.1H63v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1z"/><path fill-rule="evenodd" clip-rule="evenodd" fill="#23C2EE" d="M62.2 30.2H72V40h-9.8v-9.8zm.8.8h.8v8.1H63V31zm1.5 0h.8v8.1h-.8V31zm1.4 0h.8v8.1h-.8V31zm1.5 0h.8v8.1h-.8V31zm1.5 0h.8v8.1h-.8V31zm1.5 0h.8v8.1h-.8V31z"/><path fill-rule="evenodd" clip-rule="evenodd" fill="#00ACD3" d="M73.5 52.7h9.8v9.8h-9.8v-9.8zm.8.8h.8v8.1h-.8v-8.1zm1.4 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1zm1.5 0h.8v8.1h-.8v-8.1z"/><path fill-rule="evenodd" clip-rule="evenodd" fill="#D4EEF1" d="M48.8 78.3c1.5 0 2.7 1.2 2.7 2.7 0 1.5-1.2 2.7-2.7 2.7-1.5 0-2.7-1.2-2.7-2.7 0-1.5 1.2-2.7 2.7-2.7"/><path fill-rule="evenodd" clip-rule="evenodd" fill="#3A4D54" d="M48.8 79.1c.2 0 .5 0 .7.1-.2.1-.4.4-.4.7 0 .4.4.8.8.8.3 0 .6-.2.7-.4.1.2.1.5.1.7 0 1.1-.9 1.9-1.9 1.9-1.1 0-1.9-.9-1.9-1.9 0-1 .8-1.9 1.9-1.9M1.1 72.8h125.4c-2.7-.7-8.6-1.6-7.7-5.2-5 5.7-16.9 4-20 1.2-3.4 4.9-23 3-24.3-.8-4.2 5-17.3 5-21.5 0-1.4 3.8-21 5.7-24.3.8-3 2.8-15 4.5-20-1.2 1.1 3.5-4.9 4.5-7.6 5.2"/><path fill="#BFDBE0" d="M56 97.8c-6.7-3.2-10.3-7.5-12.4-12.2-2.5.7-5.5 1.2-8.9 1.4-1.3.1-2.7.1-4.1.1-1.7 0-3.4 0-5.2-.1 6 6 13.6 10.7 27.5 10.8H56z"/><path fill="#D4EEF1" d="M46.1 89.9c-.9-1.3-1.8-2.8-2.5-4.3-2.5.7-5.5 1.2-8.9 1.4 2.3 1.2 5.7 2.4 11.4 2.9z"/>
+    </svg>
+    <text x="50.0" y="90.5" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="600" fill="#0F172A" text-anchor="middle">Docker</text>
+  </g>
+
+  <!-- Contact Information -->
+  <!-- Website -->
+  <g transform="translate(520, 318)">
+    <rect width="256" height="36" rx="18" fill="url(#cardGrad_pastel_geometry)" stroke="#E2E8F0" stroke-width="1" filter="url(#cardShadow_pastel_geometry)" />
+    <g transform="translate(14, 10)">
+      <circle cx="8" cy="8" r="7.5" fill="none" stroke="#0284C7" stroke-width="1.4" />
+      <ellipse cx="8" cy="8" rx="3.3" ry="7.5" fill="none" stroke="#0284C7" stroke-width="1.3" />
+      <line x1="0.5" y1="8" x2="15.5" y2="8" stroke="#0284C7" stroke-width="1.3" />
+    </g>
+    <text x="38" y="22.5" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="600" fill="#0F172A">https://bernardbdas.github.io</text>
+  </g>
+  <!-- Email -->
+  <g transform="translate(792, 318)">
+    <rect width="227" height="36" rx="18" fill="url(#cardGrad_pastel_geometry)" stroke="#E2E8F0" stroke-width="1" filter="url(#cardShadow_pastel_geometry)" />
+    <g transform="translate(14, 10)">
+      <rect x="0.5" y="2" width="15" height="12" rx="2" fill="none" stroke="#0284C7" stroke-width="1.4" />
+      <path d="M1.5 3.5 L8 8.5 L14.5 3.5" fill="none" stroke="#0284C7" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <text x="38" y="22.5" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="600" fill="#0F172A">bernardbdas@gmail.com</text>
+  </g>
+</svg>

@@ -162,6 +162,8 @@ def build_banner_svg(
         theme["card_stops"] = [("0%", "#FFFFFF", "0.90"), ("100%", "#F8FAFC", "0.80")]
         theme["card_stroke"] = "#E2E8F0"
         theme["badge_text_color"] = "#0F172A"
+        theme["contact_text_color"] = "#0F172A"
+        theme["contact_icon_color"] = "#0284C7"
         theme["card_shadow_flood"] = "#64748B"
         theme["card_shadow_opacity"] = "0.12"
 
@@ -269,6 +271,8 @@ def build_banner_svg(
         svg_parts.append("")
         svg_parts.append("  <!-- Contact Information -->")
         contact_x = START_X
+        contact_text_col = theme.get("contact_text_color", theme.get("badge_text_color", "#FFFFFF"))
+        contact_icon_col = theme.get("contact_icon_color", theme.get("ambient_1", "#38BDF8"))
 
         if website_url:
             safe_website = escape(website_url)
@@ -279,11 +283,11 @@ def build_banner_svg(
                     f'  <g transform="translate({contact_x}, 318)">',
                     f'    <rect width="{pill_w}" height="36" rx="18" fill="url(#cardGrad_{theme_id})" stroke="{theme["card_stroke"]}" stroke-width="1" filter="url(#cardShadow_{theme_id})" />',
                     '    <g transform="translate(14, 10)">',
-                    f'      <circle cx="8" cy="8" r="7.5" fill="none" stroke="{theme["ambient_1"]}" stroke-width="1.3" />',
-                    f'      <ellipse cx="8" cy="8" rx="3.3" ry="7.5" fill="none" stroke="{theme["ambient_1"]}" stroke-width="1.2" />',
-                    f'      <line x1="0.5" y1="8" x2="15.5" y2="8" stroke="{theme["ambient_1"]}" stroke-width="1.2" />',
+                    f'      <circle cx="8" cy="8" r="7.5" fill="none" stroke="{contact_icon_col}" stroke-width="1.4" />',
+                    f'      <ellipse cx="8" cy="8" rx="3.3" ry="7.5" fill="none" stroke="{contact_icon_col}" stroke-width="1.3" />',
+                    f'      <line x1="0.5" y1="8" x2="15.5" y2="8" stroke="{contact_icon_col}" stroke-width="1.3" />',
                     "    </g>",
-                    f'    <text x="38" y="22.5" font-family="system-ui, -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, sans-serif" font-size="14.5" font-weight="500" fill="{theme["title_color"]}">{safe_website}</text>',
+                    f'    <text x="38" y="22.5" font-family="system-ui, -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, sans-serif" font-size="14.5" font-weight="600" fill="{contact_text_col}">{safe_website}</text>',
                     "  </g>",
                 ]
             )
@@ -298,10 +302,10 @@ def build_banner_svg(
                     f'  <g transform="translate({contact_x}, 318)">',
                     f'    <rect width="{pill_w}" height="36" rx="18" fill="url(#cardGrad_{theme_id})" stroke="{theme["card_stroke"]}" stroke-width="1" filter="url(#cardShadow_{theme_id})" />',
                     '    <g transform="translate(14, 10)">',
-                    f'      <rect x="0.5" y="2" width="15" height="12" rx="2" fill="none" stroke="{theme["ambient_1"]}" stroke-width="1.3" />',
-                    f'      <path d="M1.5 3.5 L8 8.5 L14.5 3.5" fill="none" stroke="{theme["ambient_1"]}" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />',
+                    f'      <rect x="0.5" y="2" width="15" height="12" rx="2" fill="none" stroke="{contact_icon_col}" stroke-width="1.4" />',
+                    f'      <path d="M1.5 3.5 L8 8.5 L14.5 3.5" fill="none" stroke="{contact_icon_col}" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />',
                     "    </g>",
-                    f'    <text x="38" y="22.5" font-family="system-ui, -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, sans-serif" font-size="14.5" font-weight="500" fill="{theme["title_color"]}">{safe_email}</text>',
+                    f'    <text x="38" y="22.5" font-family="system-ui, -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, sans-serif" font-size="14.5" font-weight="600" fill="{contact_text_col}">{safe_email}</text>',
                     "  </g>",
                 ]
             )

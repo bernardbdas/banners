@@ -63,6 +63,8 @@ class TestThemes(unittest.TestCase):
             "title_color",
             "subtitle_color",
             "badge_text_color",
+            "contact_text_color",
+            "contact_icon_color",
             "accent_stops",
             "ambient_1",
             "ambient_1_op",
