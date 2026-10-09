@@ -122,6 +122,14 @@ class TestGenerator(unittest.TestCase):
         root = ET.fromstring(svg_content)
         self.assertEqual(root.tag, "{http://www.w3.org/2000/svg}svg")
 
+    def test_build_banner_svg_animal_and_tortoise_themes(self):
+        """Verify generating banners with tortoiseshell, leopard, and tiger themes."""
+        for t in ("tortoiseshell", "tortoise", "leopard", "tiger"):
+            svg_content = build_banner_svg("backend", t)
+            self.assertIn("Custom Background", svg_content)
+            root = ET.fromstring(svg_content)
+            self.assertEqual(root.tag, "{http://www.w3.org/2000/svg}svg")
+
 
 if __name__ == "__main__":
     unittest.main()

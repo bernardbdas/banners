@@ -19,6 +19,20 @@ def list_available_backgrounds() -> list[str]:
     return sorted(p.stem for p in BACKGROUNDS_DIR.rglob("*.svg") if p.is_file())
 
 
+BACKGROUND_ALIASES: dict[str, str] = {
+    "tortoise": "tortoiseshell",
+    "tortoise_shell": "tortoiseshell",
+    "tortoise_print": "tortoiseshell",
+    "tortoiseshell_glasses": "tortoiseshell",
+    "tortoise_glasses": "tortoiseshell",
+    "leopard_skin": "leopard",
+    "leopard_print": "leopard",
+    "tiger_skin": "tiger",
+    "tiger_stripes": "tiger",
+    "tiger_print": "tiger",
+}
+
+
 def resolve_background_path(name_or_path: str) -> Path | None:
     """
     Resolves a background identifier to a file Path.
@@ -28,6 +42,8 @@ def resolve_background_path(name_or_path: str) -> Path | None:
         return None
 
     clean_name = name_or_path.strip().lower().replace("-", "_")
+    if clean_name in BACKGROUND_ALIASES:
+        clean_name = BACKGROUND_ALIASES[clean_name]
 
     # 1. Direct match with or without .svg in BACKGROUNDS_DIR
     for cand in [

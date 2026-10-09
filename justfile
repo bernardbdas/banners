@@ -61,6 +61,15 @@ linkedin format="all":
 network-nodes format="all":
     python3 -m banners all network_nodes {{format}}
 
+tortoiseshell format="all":
+    python3 -m banners all tortoiseshell {{format}}
+
+leopard format="all":
+    python3 -m banners all leopard {{format}}
+
+tiger format="all":
+    python3 -m banners all tiger {{format}}
+
 # Generate all SVG banners (for configured theme or optional theme argument)
 svg theme="":
     @if [ -n "{{theme}}" ]; then python3 -m banners all {{theme}} svg; else python3 -m banners all all svg; fi

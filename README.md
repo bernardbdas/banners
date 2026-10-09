@@ -123,7 +123,10 @@ The generator enforces visual guardrails to maintain high design quality:
 
 Background SVGs are located in `assets/backgrounds/`. Any background file can be passed as the theme argument.
 
-### Patterns and Topography (`assets/backgrounds/patterns/`)
+### Patterns and Textures (`assets/backgrounds/patterns/`)
+- `tortoiseshell`: Classic tortoiseshell glasses acetate with backlit amber warmth and organic espresso mottles (alias: `tortoise`).
+- `leopard`: Feline coat featuring warm honey rosettes framed by dark chocolate crescent claws (alias: `leopard_skin`).
+- `tiger`: Sunset ochre fur with bold, sweeping organic tiger stripes and tapering curves (alias: `tiger_skin`).
 - `topographical`: Dark elevation contours with glowing isolines.
 - `topographical_light`: Minimalist clean white/slate elevation contour map.
 - `topographical_pastel`: Contour relief over a soft pastel gradient.
