@@ -30,6 +30,10 @@ BACKGROUND_ALIASES: dict[str, str] = {
     "tiger_skin": "tiger",
     "tiger_stripes": "tiger",
     "tiger_print": "tiger",
+    "topographical_blood_red": "topographical_crimson",
+    "topographical_red": "topographical_crimson",
+    "blood_red": "topographical_crimson",
+    "crimson": "topographical_crimson",
 }
 
 

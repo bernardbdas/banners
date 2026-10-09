@@ -128,6 +128,7 @@ Background SVGs are located in `assets/backgrounds/`. Any background file can be
 - `leopard`: Feline coat featuring warm honey rosettes framed by dark chocolate crescent claws (alias: `leopard_skin`).
 - `tiger`: Sunset ochre fur with bold, sweeping organic tiger stripes and tapering curves (alias: `tiger_skin`).
 - `topographical`: Dark elevation contours with glowing isolines.
+- `topographical_crimson`: Obsidian canvas with luminous blood red elevation isolines (aliases: `blood_red`, `crimson`).
 - `topographical_light`: Minimalist clean white/slate elevation contour map.
 - `topographical_pastel`: Contour relief over a soft pastel gradient.
 - `topographical_dense`: High-density alpine terrain contour lines.

@@ -46,6 +46,9 @@ topographical-dense format="all":
 topographical-pastel format="all":
     python3 -m banners all topographical_pastel {{format}}
 
+topographical-crimson format="all":
+    python3 -m banners all topographical_crimson {{format}}
+
 dark format="all":
     python3 -m banners all dark {{format}}
 

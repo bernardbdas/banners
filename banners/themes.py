@@ -131,6 +131,24 @@ THEMES: dict[str, dict[str, Any]] = {
         "ambient_2": "#F97316",
         "ambient_2_op": "0.14",
     },
+    "topographical_crimson": {
+        "bg_stops": [("0%", "#0B0405"), ("50%", "#160709"), ("100%", "#080203")],
+        "card_stops": [("0%", "#18080A", "0.90"), ("100%", "#0D0405", "0.90")],
+        "card_stroke": "#991B1B",
+        "card_shadow_flood": "#000000",
+        "card_shadow_opacity": "0.60",
+        "card_shadow_blur": "8",
+        "title_color": "#FFFFFF",
+        "subtitle_color": "#FECACA",
+        "badge_text_color": "#FEE2E2",
+        "contact_text_color": "#FFFFFF",
+        "contact_icon_color": "#EF4444",
+        "accent_stops": [("0%", "#FF2A4D"), ("50%", "#DC2626"), ("100%", "#991B1B")],
+        "ambient_1": "#DC2626",
+        "ambient_1_op": "0.15",
+        "ambient_2": "#FF2A4D",
+        "ambient_2_op": "0.10",
+    },
 }
 
 # Aliases for convenience
@@ -142,6 +160,10 @@ THEMES["leopard_print"] = THEMES["leopard"]
 THEMES["tiger_skin"] = THEMES["tiger"]
 THEMES["tiger_stripes"] = THEMES["tiger"]
 THEMES["tiger_print"] = THEMES["tiger"]
+THEMES["topographical_blood_red"] = THEMES["topographical_crimson"]
+THEMES["topographical_red"] = THEMES["topographical_crimson"]
+THEMES["blood_red"] = THEMES["topographical_crimson"]
+THEMES["crimson"] = THEMES["topographical_crimson"]
 
 
 def get_available_themes() -> list[str]:
