@@ -85,6 +85,11 @@ devops theme="":
 mobile theme="":
     @if [ -n "{{theme}}" ]; then python3 -m banners mobile {{theme}} all; else python3 -m banners mobile; fi
 
+# Generate custom banner (configured via local.env or flags):
+custom theme="" format="all":
+    @if [ -n "{{theme}}" ]; then python3 -m banners custom {{theme}} {{format}}; else python3 -m banners custom; fi
+
+
 # Generate all 6 specialized Data & AI/ML role banners:
 roles theme="":
     @if [ -n "{{theme}}" ]; then \

@@ -27,16 +27,32 @@ def print_help() -> None:
     print(f"  BANNER_NAME: {cfg.banner_name or 'all'} (default preset)")
     print(f"  THEME:       {cfg.theme or cfg.background or 'dark'}")
     print(f"  FADE:        {int(cfg.fade * 100)}% (pattern fade / opacity)")
+    print(f"  TITLE:       {cfg.title or '(default from preset)'}")
+    print(f"  SUBTITLE:    {cfg.subtitle or '(default from preset)'}")
+    print(f"  ICONS:       {cfg.icons or '(default from preset)'}")
     print(f"  WEBSITE_URL: {cfg.website_url or '(not configured)'}")
     print(f"  EMAIL:       {cfg.email or '(not configured)'}")
     print("\nArguments & Flags:")
-    print(f"  preset: Specific role preset name, or 'all' (default: '{cfg.banner_name or 'all'}')")
     print(
-        f"  theme:  Theme name (e.g. 'topographical', 'dark', 'light', etc.), or 'all' (default: '{cfg.theme or cfg.background or 'dark'}')"
+        f"  preset: Specific role preset name, 'custom', or 'all' (default: '{cfg.banner_name or 'all'}')"
+    )
+    print(
+        f"  theme:  Theme name (e.g. 'topographical', 'linkedin', 'dark', etc.), or 'all' (default: '{cfg.theme or cfg.background or 'dark'}')"
     )
     print("  format: 'png', 'svg', or 'all' (default: 'all')")
     print("  scale:  Integer upscale multiplier (default: 4 -> 6336x1584 px)")
     print("  --fade: Pattern fade/opacity percentage (e.g. '50%', '40', '0.5', default: 100%)")
+    print(
+        "  --title <text>:    Custom role title (3-45 chars, e.g. 'Staff Infrastructure Engineer')"
+    )
+    print("  --subtitle <text>: Custom tagline/subtitle (3-70 chars)")
+    print(
+        "  --icons <list>:    Comma-separated tech icons (3-8 icons, e.g. 'go, k8s, docker, aws, python')"
+    )
+    print("\nDesign Standards & Guardrails:")
+    print("  - Icon Count: 3 to 8 icons maximum (guarantees safe-zone alignment without clipping)")
+    print("  - Title Length: 3 to 45 characters maximum")
+    print("  - Subtitle Length: 3 to 70 characters maximum")
     print("\nAvailable presets:")
     for key, val in PRESETS.items():
         print(f"  - {key:<16}: {val['title']}")
@@ -48,20 +64,9 @@ def print_help() -> None:
         "  banners backend topographical png               # Generate high-res topographical PNG for Backend"
     )
     print(
-        "  banners backend topographical png --fade 40%    # Topographical banner with 40% pattern fade"
+        "  banners custom topographical png --title 'Lead Cloud Architect' --icons 'go,k8s,docker,aws,python'"
     )
-    print(
-        "  banners fullstack topographical_light           # Generate fullstack banner in light topography"
-    )
-    print(
-        "  banners ai-ml solid_lavender png                # Generate AI/ML banner on pastel lavender"
-    )
-    print(
-        "  banners all topographical png                   # Generate all role banners in topographical theme"
-    )
-    print(
-        "  banners backend all all                         # Generate backend banner across all themes"
-    )
+    print("  banners backend --title 'Distributed Systems Lead' # Override title on backend preset")
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -74,6 +79,9 @@ def main(argv: list[str] | None = None) -> int:
 
     background_override = None
     fade_override = None
+    title_override = None
+    subtitle_override = None
+    icons_override = None
     clean_argv = []
     i = 0
     while i < len(argv):
@@ -95,12 +103,37 @@ def main(argv: list[str] | None = None) -> int:
         elif argv[i].startswith("-f="):
             fade_override = argv[i].split("=", 1)[1]
             i += 1
+        elif argv[i] in ("--title", "--role") and i + 1 < len(argv):
+            title_override = argv[i + 1]
+            i += 2
+        elif argv[i].startswith(("--title=", "--role=")):
+            title_override = argv[i].split("=", 1)[1]
+            i += 1
+        elif argv[i] in ("--subtitle", "--tagline") and i + 1 < len(argv):
+            subtitle_override = argv[i + 1]
+            i += 2
+        elif argv[i].startswith(("--subtitle=", "--tagline=")):
+            subtitle_override = argv[i].split("=", 1)[1]
+            i += 1
+        elif argv[i] in ("--icons", "--skills", "--stack") and i + 1 < len(argv):
+            icons_override = argv[i + 1]
+            i += 2
+        elif argv[i].startswith(("--icons=", "--skills=", "--stack=")):
+            icons_override = argv[i].split("=", 1)[1]
+            i += 1
         else:
             clean_argv.append(argv[i])
             i += 1
     argv = clean_argv
 
-    default_preset = config.banner_name if config.banner_name else "all"
+    custom_title = title_override or config.title or None
+    custom_subtitle = subtitle_override or config.subtitle or None
+    custom_icons = icons_override or config.icons or None
+    has_customization = bool(custom_title or custom_subtitle or custom_icons)
+
+    default_preset = (
+        config.banner_name if config.banner_name else ("custom" if has_customization else "all")
+    )
     preset_raw = argv[0] if len(argv) > 0 else default_preset
 
     if preset_raw.lower() in ("--list", "-l", "list", "--help", "-h", "help"):
@@ -114,12 +147,15 @@ def main(argv: list[str] | None = None) -> int:
     # Support both underscore and hyphen preset names (e.g., ai-ml -> ai_ml)
     preset_arg = preset_raw.lower().replace("-", "_")
 
-    if preset_arg not in ("all", "--all") and preset_arg not in PRESETS:
-        print(
-            f"Error: Unknown preset '{preset_raw}'. Available:\n  {', '.join(PRESETS.keys())} or 'all'",
-            file=sys.stderr,
-        )
-        return 1
+    if preset_arg not in ("all", "--all", "custom") and preset_arg not in PRESETS:
+        if has_customization:
+            preset_arg = "custom"
+        else:
+            print(
+                f"Error: Unknown preset '{preset_raw}'. Available:\n  {', '.join(PRESETS.keys())}, 'custom', or 'all'",
+                file=sys.stderr,
+            )
+            return 1
 
     selected_presets = list(PRESETS.keys()) if preset_arg in ("all", "--all") else [preset_arg]
 
@@ -168,19 +204,26 @@ def main(argv: list[str] | None = None) -> int:
         for preset in selected_presets:
             svg_path = os.path.join("exported", theme, "svg", f"banner_{preset}.svg")
             png_path = os.path.join("exported", theme, "png", f"banner_{preset}.png")
-            generate_banner(
-                preset_name=preset,
-                theme_name=theme,
-                output_svg_path=svg_path,
-                output_png_path=png_path,
-                gen_svg=gen_svg,
-                gen_png=gen_png,
-                scale=scale_val,
-                website_url=config.website_url,
-                email=config.email,
-                background=theme if theme not in ("dark", "light") else background_override,
-                fade=fade_val,
-            )
+            try:
+                generate_banner(
+                    preset_name=preset,
+                    theme_name=theme,
+                    output_svg_path=svg_path,
+                    output_png_path=png_path,
+                    gen_svg=gen_svg,
+                    gen_png=gen_png,
+                    scale=scale_val,
+                    website_url=config.website_url,
+                    email=config.email,
+                    background=theme if theme not in ("dark", "light") else background_override,
+                    fade=fade_val,
+                    title=custom_title,
+                    subtitle=custom_subtitle,
+                    icons=custom_icons,
+                )
+            except (ValueError, FileNotFoundError) as e:
+                print(f"Error: {e}", file=sys.stderr)
+                return 1
 
     return 0
 

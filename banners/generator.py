@@ -112,11 +112,39 @@ def build_banner_svg(
     email: str | None = None,
     background: str | None = None,
     fade: float | None = None,
+    title: str | None = None,
+    subtitle: str | None = None,
+    icons: list[tuple[str, str]] | list[str] | str | None = None,
 ) -> str:
     """Constructs the complete XML markup for a LinkedIn banner."""
-    preset = PRESETS.get(preset_name)
-    if not preset:
-        raise ValueError(f"Unknown preset: '{preset_name}'. Available: {', '.join(PRESETS.keys())}")
+    base_preset = PRESETS.get(preset_name)
+    if (
+        not base_preset
+        and preset_name not in ("custom", "default", "custom_banner")
+        and not (title or icons)
+    ):
+        raise ValueError(
+            f"Unknown preset: '{preset_name}'. Available: {', '.join(PRESETS.keys())} or 'custom'"
+        )
+
+    from banners.custom import build_custom_preset, validate_banner_standards
+
+    if (
+        title
+        or subtitle
+        or icons
+        or preset_name in ("custom", "default", "custom_banner")
+        or not base_preset
+    ):
+        preset = build_custom_preset(
+            title=title,
+            subtitle=subtitle,
+            icons_spec=icons,
+            base_preset=base_preset,
+        )
+    else:
+        preset = dict(base_preset)
+        validate_banner_standards(preset["title"], preset["subtitle"], preset["icons"])
 
     theme = dict(THEMES.get(theme_name, THEMES["dark"]))
 
@@ -335,6 +363,9 @@ def generate_banner(
     email: str | None = None,
     background: str | None = None,
     fade: float | None = None,
+    title: str | None = None,
+    subtitle: str | None = None,
+    icons: list[tuple[str, str]] | list[str] | str | None = None,
 ) -> None:
     """Generates banner files in SVG and/or PNG formats."""
     full_svg = build_banner_svg(
@@ -344,6 +375,9 @@ def generate_banner(
         email=email,
         background=background,
         fade=fade,
+        title=title,
+        subtitle=subtitle,
+        icons=icons,
     )
 
     # Ensure parent directory exists if specified

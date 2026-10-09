@@ -21,6 +21,9 @@ class BannerConfig:
     background: str = ""
     theme: str = ""
     fade: float = 1.0
+    title: str = ""
+    subtitle: str = ""
+    icons: str = ""
 
 
 def parse_fade_percentage(val: str | float | int | None) -> float:
@@ -156,6 +159,36 @@ def load_config(env_path: Path | str | None = None) -> BannerConfig:
     )
     fade_val = parse_fade_percentage(fade_raw)
 
+    title_val = (
+        os.environ.get("TITLE")
+        or os.environ.get("ROLE_TITLE")
+        or os.environ.get("BANNER_TITLE")
+        or env_data.get("TITLE")
+        or env_data.get("ROLE_TITLE")
+        or env_data.get("BANNER_TITLE")
+        or ""
+    ).strip()
+
+    subtitle_val = (
+        os.environ.get("SUBTITLE")
+        or os.environ.get("ROLE_SUBTITLE")
+        or os.environ.get("BANNER_SUBTITLE")
+        or env_data.get("SUBTITLE")
+        or env_data.get("ROLE_SUBTITLE")
+        or env_data.get("BANNER_SUBTITLE")
+        or ""
+    ).strip()
+
+    icons_val = (
+        os.environ.get("ICONS")
+        or os.environ.get("SKILLS")
+        or os.environ.get("TECH_STACK")
+        or env_data.get("ICONS")
+        or env_data.get("SKILLS")
+        or env_data.get("TECH_STACK")
+        or ""
+    ).strip()
+
     return BannerConfig(
         website_url=website_url.strip(),
         email=email.strip(),
@@ -163,4 +196,7 @@ def load_config(env_path: Path | str | None = None) -> BannerConfig:
         background=theme_val,
         theme=theme_val,
         fade=fade_val,
+        title=title_val,
+        subtitle=subtitle_val,
+        icons=icons_val,
     )

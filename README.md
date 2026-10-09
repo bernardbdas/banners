@@ -68,8 +68,36 @@ python3 -m banners fullstack topographical_light all
 python3 -m banners ai_ml linkedin png
 python3 -m banners backend topographical png --fade 40%
 python3 -m banners backend solid_lavender png 2
+python3 -m banners custom topographical png --title "Lead Cloud Architect" --icons "go,k8s,terraform,aws,docker,python"
 python3 -m banners --help
 ```
+
+---
+
+## Custom Banners & Design Standards
+
+You can generate custom banners with personalized titles, subtitles, and curated tech icons via CLI flags or `local.env`:
+
+```bash
+# Create a custom banner from scratch
+python3 -m banners custom topographical png \
+  --title "Lead Platform Engineer" \
+  --subtitle "Distributed Systems • Kubernetes • Cloud Native" \
+  --icons "go, k8s, terraform, aws, docker, python"
+
+# Override specific attributes on an existing preset
+python3 -m banners backend --title "Distributed Systems Architect"
+python3 -m banners fullstack --icons "ts, react, nextjs, node, postgres, docker"
+```
+
+### Enforced Standards and Guidelines
+
+The generator enforces visual guardrails to maintain high design quality:
+
+- **Icon Count (3 to 8 icons)**: Banners require at least 3 icons to maintain visual balance, and cap at 8 icons so cards fit comfortably within the LinkedIn safe zone (520 px avatar margin on left, no clipping on right).
+- **Title Length (3 to 45 characters)**: Prevents headline overflow at 48px font size.
+- **Subtitle Length (3 to 80 characters)**: Prevents description overflow at 22px font size.
+- **Smart Icon Resolution**: Accepts exact stems, canonical names, or common aliases (e.g. `k8s`, `postgres`, `cpp`, `go`, `ts`, `hf`, `gcp`). Typo suggestions are provided automatically if an unknown icon is entered.
 
 ---
 
