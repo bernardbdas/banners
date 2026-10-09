@@ -1,0 +1,40 @@
+[project]
+name = "banners"
+version = "0.1.0"
+description = "Tech Stacks Icon Repository & LinkedIn Banner Generator"
+readme = "README.md"
+authors = [{ name = "bernardbdas", email = "bernarddas1@gmail.com" }]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+banners = "banners.cli:main"
+generate-banners = "banners.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.6.2",
+    "ruff>=0.16.10",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+    "UP",  # pyupgrade
+    "B",   # flake8-bugbear
+    "RUF", # ruff-specific rules
+]
+ignore = [
+    "E501", # line length handled by ruff format / multiline templates
+]
