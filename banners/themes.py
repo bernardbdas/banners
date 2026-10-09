@@ -149,6 +149,60 @@ THEMES: dict[str, dict[str, Any]] = {
         "ambient_2": "#FF2A4D",
         "ambient_2_op": "0.10",
     },
+    "topographical_crimson_light": {
+        "bg_stops": [("0%", "#FFFFFF"), ("50%", "#FFF7F8"), ("100%", "#FFEBEF")],
+        "card_stops": [("0%", "#FFFFFF", "0.95"), ("100%", "#FFF5F7", "0.92")],
+        "card_stroke": "#FECDD3",
+        "card_shadow_flood": "#881337",
+        "card_shadow_opacity": "0.10",
+        "card_shadow_blur": "10",
+        "title_color": "#881337",
+        "subtitle_color": "#9F1239",
+        "badge_text_color": "#9F1239",
+        "contact_text_color": "#881337",
+        "contact_icon_color": "#E11D48",
+        "accent_stops": [("0%", "#FB7185"), ("50%", "#E11D48"), ("100%", "#9F1239")],
+        "ambient_1": "#FB7185",
+        "ambient_1_op": "0.08",
+        "ambient_2": "#E11D48",
+        "ambient_2_op": "0.06",
+    },
+    "topographical_cyber": {
+        "bg_stops": [("0%", "#030712"), ("50%", "#090D1A"), ("100%", "#02040A")],
+        "card_stops": [("0%", "#0A0F1F", "0.90"), ("100%", "#040711", "0.90")],
+        "card_stroke": "#06B6D4",
+        "card_shadow_flood": "#000000",
+        "card_shadow_opacity": "0.70",
+        "card_shadow_blur": "10",
+        "title_color": "#FFFFFF",
+        "subtitle_color": "#67E8F9",
+        "badge_text_color": "#E0E7FF",
+        "contact_text_color": "#F8FAFC",
+        "contact_icon_color": "#F43F5E",
+        "accent_stops": [("0%", "#06B6D4"), ("50%", "#A855F7"), ("100%", "#F43F5E")],
+        "ambient_1": "#06B6D4",
+        "ambient_1_op": "0.20",
+        "ambient_2": "#F43F5E",
+        "ambient_2_op": "0.15",
+    },
+    "topographical_vintage": {
+        "bg_stops": [("0%", "#F7F3EB"), ("50%", "#EDE4D3"), ("100%", "#E2D5BE")],
+        "card_stops": [("0%", "#FFFDF9", "0.94"), ("100%", "#F7F2E8", "0.92")],
+        "card_stroke": "#D6C7B2",
+        "card_shadow_flood": "#44403C",
+        "card_shadow_opacity": "0.12",
+        "card_shadow_blur": "8",
+        "title_color": "#1C1917",
+        "subtitle_color": "#57534E",
+        "badge_text_color": "#292524",
+        "contact_text_color": "#1C1917",
+        "contact_icon_color": "#854D0E",
+        "accent_stops": [("0%", "#A16207"), ("50%", "#78350F"), ("100%", "#451A03")],
+        "ambient_1": "#A16207",
+        "ambient_1_op": "0.08",
+        "ambient_2": "#78350F",
+        "ambient_2_op": "0.06",
+    },
 }
 
 # Aliases for convenience
@@ -164,6 +218,16 @@ THEMES["topographical_blood_red"] = THEMES["topographical_crimson"]
 THEMES["topographical_red"] = THEMES["topographical_crimson"]
 THEMES["blood_red"] = THEMES["topographical_crimson"]
 THEMES["crimson"] = THEMES["topographical_crimson"]
+THEMES["topographical_blood_red_light"] = THEMES["topographical_crimson_light"]
+THEMES["topographical_red_light"] = THEMES["topographical_crimson_light"]
+THEMES["blood_red_light"] = THEMES["topographical_crimson_light"]
+THEMES["crimson_light"] = THEMES["topographical_crimson_light"]
+THEMES["cyber"] = THEMES["topographical_cyber"]
+THEMES["topographical_neon"] = THEMES["topographical_cyber"]
+THEMES["neon_topo"] = THEMES["topographical_cyber"]
+THEMES["vintage"] = THEMES["topographical_vintage"]
+THEMES["topographical_parchment"] = THEMES["topographical_vintage"]
+THEMES["parchment_topo"] = THEMES["topographical_vintage"]
 
 
 def get_available_themes() -> list[str]:

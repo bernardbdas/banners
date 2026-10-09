@@ -183,8 +183,8 @@ def build_banner_svg(
     else:
         theme = dict(THEMES[base_theme])
 
-    # Adapt styling for pastel backgrounds to guarantee high contrast and legibility
-    if bg_data and bg_data[2]:  # is_pastel
+    # Adapt styling for generic themes when rendered over pastel/light backgrounds
+    if bg_data and bg_data[2] and (clean_theme in ("dark", "light") or clean_theme not in THEMES):
         theme["title_color"] = "#0F172A"
         theme["subtitle_color"] = "#334155"
         theme["card_stops"] = [("0%", "#FFFFFF", "0.90"), ("100%", "#F8FAFC", "0.80")]

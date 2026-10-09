@@ -49,6 +49,15 @@ topographical-pastel format="all":
 topographical-crimson format="all":
     python3 -m banners all topographical_crimson {{format}}
 
+topographical-crimson-light format="all":
+    python3 -m banners all topographical_crimson_light {{format}}
+
+topographical-cyber format="all":
+    python3 -m banners all topographical_cyber {{format}}
+
+topographical-vintage format="all":
+    python3 -m banners all topographical_vintage {{format}}
+
 dark format="all":
     python3 -m banners all dark {{format}}
 

@@ -131,6 +131,12 @@ class TestGenerator(unittest.TestCase):
             "tiger",
             "topographical_crimson",
             "blood_red",
+            "topographical_crimson_light",
+            "crimson_light",
+            "topographical_cyber",
+            "cyber",
+            "topographical_vintage",
+            "vintage",
         ):
             svg_content = build_banner_svg("backend", t)
             self.assertIn("Custom Background", svg_content)

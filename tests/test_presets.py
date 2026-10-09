@@ -55,6 +55,12 @@ class TestThemes(unittest.TestCase):
         self.assertIn("leopard", THEMES)
         self.assertIn("tiger", THEMES)
         self.assertIn("topographical_crimson", THEMES)
+        self.assertIn("topographical_crimson_light", THEMES)
+        self.assertIn("crimson_light", THEMES)
+        self.assertIn("topographical_cyber", THEMES)
+        self.assertIn("cyber", THEMES)
+        self.assertIn("topographical_vintage", THEMES)
+        self.assertIn("vintage", THEMES)
 
     def test_theme_attributes(self):
         """Verify all themes define necessary styling tokens."""

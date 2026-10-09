@@ -129,6 +129,9 @@ Background SVGs are located in `assets/backgrounds/`. Any background file can be
 - `tiger`: Sunset ochre fur with bold, sweeping organic tiger stripes and tapering curves (alias: `tiger_skin`).
 - `topographical`: Dark elevation contours with glowing isolines.
 - `topographical_crimson`: Obsidian canvas with luminous blood red elevation isolines (aliases: `blood_red`, `crimson`).
+- `topographical_crimson_light`: Soft porcelain ivory canvas with drop-shadowed laser-cut crimson isolines (aliases: `crimson_light`, `blood_red_light`).
+- `topographical_cyber`: Dual-tone neon cyan & hot magenta isolines over midnight obsidian (aliases: `cyber`, `neon_topo`).
+- `topographical_vintage`: Warm aged parchment with surveyor coordinate grid & bistre contour lines (aliases: `vintage`, `parchment_topo`).
 - `topographical_light`: Minimalist clean white/slate elevation contour map.
 - `topographical_pastel`: Contour relief over a soft pastel gradient.
 - `topographical_dense`: High-density alpine terrain contour lines.

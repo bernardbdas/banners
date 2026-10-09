@@ -34,6 +34,16 @@ BACKGROUND_ALIASES: dict[str, str] = {
     "topographical_red": "topographical_crimson",
     "blood_red": "topographical_crimson",
     "crimson": "topographical_crimson",
+    "topographical_blood_red_light": "topographical_crimson_light",
+    "topographical_red_light": "topographical_crimson_light",
+    "blood_red_light": "topographical_crimson_light",
+    "crimson_light": "topographical_crimson_light",
+    "cyber": "topographical_cyber",
+    "topographical_neon": "topographical_cyber",
+    "neon_topo": "topographical_cyber",
+    "vintage": "topographical_vintage",
+    "topographical_parchment": "topographical_vintage",
+    "parchment_topo": "topographical_vintage",
 }
 
 
