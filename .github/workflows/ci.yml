@@ -46,7 +46,13 @@ jobs:
       - name: Verify banner generation
         run: |
           uv run banners devops all all
-          test -f exported/svg/dark/banner_devops.svg
-          test -f exported/png/dark/banner_devops.png
-          test -f exported/svg/light/banner_devops.svg
-          test -f exported/png/light/banner_devops.png
+          test -f exported/dark/svg/banner_devops.svg
+          test -f exported/dark/png/banner_devops.png
+          test -f exported/light/svg/banner_devops.svg
+          test -f exported/light/png/banner_devops.png
+          test -f exported/topographical/svg/banner_devops.svg
+          test -f exported/topographical/png/banner_devops.png
+          test -f exported/topographical_light/svg/banner_devops.svg
+          test -f exported/topographical_light/png/banner_devops.png
+          test -f exported/linkedin/svg/banner_devops.svg
+          test -f exported/linkedin/png/banner_devops.png
