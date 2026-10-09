@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1584" height="396" viewBox="0 0 1584 396">
+  <defs>
+    <linearGradient id="sunset_base" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF7ED" />
+      <stop offset="45%" stop-color="#FFF1F2" />
+      <stop offset="100%" stop-color="#FAF5FF" />
+    </linearGradient>
+    <radialGradient id="sunset_sun" cx="82%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#FED7AA" stop-opacity="0.75" />
+      <stop offset="50%" stop-color="#FECDD3" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#FAF5FF" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="sunset_rose" cx="20%" cy="80%" r="60%">
+      <stop offset="0%" stop-color="#FDA4AF" stop-opacity="0.4" />
+      <stop offset="60%" stop-color="#FCE7F3" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#FFF7ED" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="sunset_horizon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F43F5E" stop-opacity="0.25" />
+      <stop offset="50%" stop-color="#FB923C" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1584" height="396" fill="url(#sunset_base)" />
+  <rect width="1584" height="396" fill="url(#sunset_sun)" />
+  <rect width="1584" height="396" fill="url(#sunset_rose)" />
+
+  <!-- Horizon Wave Ribbons -->
+  <path d="M -50 320 C 350 260 700 370 1100 290 S 1450 250 1650 310 L 1650 420 L -50 420 Z" fill="url(#sunset_horizon)" opacity="0.15" />
+  <path d="M -50 350 C 400 300 750 390 1150 330 S 1480 290 1650 340 L 1650 420 L -50 420 Z" fill="url(#sunset_horizon)" opacity="0.1" />
+</svg>

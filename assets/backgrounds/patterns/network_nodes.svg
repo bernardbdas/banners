@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1584" height="396" viewBox="0 0 1584 396">
+  <defs>
+    <!-- Deep Midnight Blue Gradient Base -->
+    <linearGradient id="network_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#001428" />
+      <stop offset="35%" stop-color="#002244" />
+      <stop offset="70%" stop-color="#0A3E6D" />
+      <stop offset="100%" stop-color="#001020" />
+    </linearGradient>
+
+    <!-- Network Graph Edge Line Gradient -->
+    <linearGradient id="network_edge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A66C2" stop-opacity="0.60" />
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#60A5FA" stop-opacity="0.40" />
+    </linearGradient>
+
+    <!-- Secondary Faint Data Stream Gradient -->
+    <linearGradient id="faint_edge" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0A66C2" stop-opacity="0.15" />
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0.10" />
+    </linearGradient>
+
+    <!-- Radial Glow Accent for Right Network Cluster -->
+    <radialGradient id="cluster_glow" cx="85%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#0A66C2" stop-opacity="0.22" />
+      <stop offset="60%" stop-color="#0284C7" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#001428" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Node Glow Filter -->
+    <filter id="node_glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Canvas Base -->
+  <rect width="1584" height="396" fill="url(#network_bg)" />
+
+  <!-- Ambient Light Fields -->
+  <rect width="1584" height="396" fill="url(#cluster_glow)" />
+  <circle cx="1400" cy="90" r="220" fill="#0A66C2" opacity="0.12" filter="blur(60px)" />
+  <circle cx="260" cy="300" r="200" fill="#004182" opacity="0.15" filter="blur(60px)" />
+  <circle cx="850" cy="50" r="160" fill="#38BDF8" opacity="0.06" filter="blur(50px)" />
+
+  <!-- Background Pattern: Professional Global Network Graph & Constellation Mesh -->
+  <!-- Cluster 1: Right Field (Primary Tech Connections Hub) -->
+  <g fill="none" stroke="url(#network_edge)" stroke-width="1.3">
+    <!-- Primary Interconnected Edges -->
+    <line x1="1160" y1="90" x2="1280" y2="70" />
+    <line x1="1280" y1="70" x2="1380" y2="140" />
+    <line x1="1380" y1="140" x2="1480" y2="60" />
+    <line x1="1480" y1="60" x2="1560" y2="150" />
+    <line x1="1560" y1="150" x2="1520" y2="280" />
+    <line x1="1520" y1="280" x2="1440" y2="230" />
+    <line x1="1440" y1="230" x2="1380" y2="140" />
+    <line x1="1380" y1="140" x2="1320" y2="210" />
+    <line x1="1320" y1="210" x2="1220" y2="170" />
+    <line x1="1220" y1="170" x2="1160" y2="90" />
+    <line x1="1220" y1="170" x2="1280" y2="70" />
+    <line x1="1280" y1="70" x2="1440" y2="230" />
+    <line x1="1320" y1="210" x2="1260" y2="330" />
+    <line x1="1260" y1="330" x2="1380" y2="340" />
+    <line x1="1380" y1="340" x2="1440" y2="230" />
+    <line x1="1380" y1="340" x2="1520" y2="280" />
+    <line x1="1080" y1="140" x2="1160" y2="90" />
+    <line x1="1080" y1="140" x2="1220" y2="170" />
+    <line x1="1260" y1="330" x2="1160" y2="280" />
+    <line x1="1160" y1="280" x2="1220" y2="170" />
+    <line x1="1160" y1="280" x2="1080" y2="330" />
+    <line x1="1480" y1="60" x2="1550" y2="40" />
+    <line x1="1560" y1="150" x2="1584" y2="120" />
+    <line x1="1520" y1="280" x2="1584" y2="320" />
+  </g>
+
+  <!-- Secondary Long-Range Crosslinks & Data Pathways -->
+  <g fill="none" stroke="url(#faint_edge)" stroke-width="1.0" stroke-dasharray="3,5">
+    <line x1="940" y1="110" x2="1080" y2="140" />
+    <line x1="1080" y1="140" x2="980" y2="270" />
+    <line x1="980" y1="270" x2="1160" y2="280" />
+    <line x1="980" y1="270" x2="880" y2="340" />
+    <line x1="880" y1="340" x2="1080" y2="330" />
+    <line x1="1280" y1="70" x2="1480" y2="60" />
+    <line x1="1160" y1="90" x2="1320" y2="210" />
+    <line x1="1220" y1="170" x2="1380" y2="340" />
+    <line x1="1480" y1="60" x2="1440" y2="230" />
+    <line x1="1380" y1="140" x2="1520" y2="280" />
+  </g>
+
+  <!-- Cluster 2: Left Field (Subtle Avatar Safe-Zone Mesh) -->
+  <g fill="none" stroke="url(#faint_edge)" stroke-width="1.1">
+    <line x1="60" y1="80" x2="160" y2="60" />
+    <line x1="160" y1="60" x2="260" y2="110" />
+    <line x1="260" y1="110" x2="360" y2="70" />
+    <line x1="360" y1="70" x2="440" y2="140" />
+    <line x1="260" y1="110" x2="210" y2="220" />
+    <line x1="210" y1="220" x2="310" y2="260" />
+    <line x1="310" y1="260" x2="440" y2="230" />
+    <line x1="440" y1="230" x2="440" y2="140" />
+    <line x1="210" y1="220" x2="120" y2="280" />
+    <line x1="120" y1="280" x2="60" y2="230" />
+    <line x1="60" y1="230" x2="60" y2="80" />
+    <line x1="120" y1="280" x2="200" y2="350" />
+    <line x1="200" y1="350" x2="310" y2="350" />
+    <line x1="310" y1="350" x2="310" y2="260" />
+    <line x1="310" y1="350" x2="420" y2="360" />
+    <line x1="420" y1="360" x2="440" y2="230" />
+  </g>
+
+  <!-- Network Nodes: Vertex Hub Circles & Signal Rings -->
+  <!-- Right Major Hubs -->
+  <g fill="#38BDF8">
+    <circle cx="1280" cy="70" r="4.5" filter="url(#node_glow)" />
+    <circle cx="1380" cy="140" r="5.5" filter="url(#node_glow)" />
+    <circle cx="1480" cy="60" r="4.0" filter="url(#node_glow)" />
+    <circle cx="1560" cy="150" r="4.5" filter="url(#node_glow)" />
+    <circle cx="1440" cy="230" r="5.0" filter="url(#node_glow)" />
+    <circle cx="1520" cy="280" r="4.0" filter="url(#node_glow)" />
+    <circle cx="1320" cy="210" r="4.0" filter="url(#node_glow)" />
+    <circle cx="1220" cy="170" r="4.5" filter="url(#node_glow)" />
+    <circle cx="1160" cy="90" r="3.5" filter="url(#node_glow)" />
+    <circle cx="1260" cy="330" r="4.5" filter="url(#node_glow)" />
+    <circle cx="1380" cy="340" r="4.0" filter="url(#node_glow)" />
+    <circle cx="1160" cy="280" r="3.5" filter="url(#node_glow)" />
+    <circle cx="1080" cy="140" r="3.5" filter="url(#node_glow)" />
+  </g>
+
+  <!-- Left Secondary Hubs -->
+  <g fill="#60A5FA" opacity="0.8">
+    <circle cx="160" cy="60" r="3.0" />
+    <circle cx="260" cy="110" r="3.5" />
+    <circle cx="360" cy="70" r="3.0" />
+    <circle cx="440" cy="140" r="3.5" />
+    <circle cx="210" cy="220" r="3.5" />
+    <circle cx="310" cy="260" r="3.5" />
+    <circle cx="440" cy="230" r="3.5" />
+    <circle cx="120" cy="280" r="3.0" />
+    <circle cx="200" cy="350" r="3.0" />
+    <circle cx="310" cy="350" r="3.5" />
+  </g>
+
+  <!-- Signal Pulse Rings (Active Network Connections) -->
+  <g fill="none" stroke="#38BDF8" stroke-width="1.2">
+    <circle cx="1380" cy="140" r="11" opacity="0.4" />
+    <circle cx="1380" cy="140" r="18" opacity="0.2" stroke-dasharray="3,3" />
+    <circle cx="1280" cy="70" r="9" opacity="0.35" />
+    <circle cx="1440" cy="230" r="10" opacity="0.35" />
+    <circle cx="1440" cy="230" r="16" opacity="0.18" stroke-dasharray="2,4" />
+    <circle cx="1260" cy="330" r="9" opacity="0.3" />
+    <circle cx="260" cy="110" r="8" opacity="0.25" />
+    <circle cx="310" cy="260" r="8" opacity="0.25" />
+  </g>
+
+  <!-- Modern Tech Micro-Coordinate Data Accents -->
+  <g font-family="system-ui, -apple-system, sans-serif" font-size="8" font-weight="600" fill="#38BDF8" opacity="0.35" letter-spacing="1">
+    <text x="1490" y="80">NODE_01</text>
+    <text x="1395" y="160">HUB_SYNC</text>
+    <text x="1455" y="250">NET_MESH</text>
+    <text x="1275" y="350">EDGE_77</text>
+    <text x="1175" y="105">40.71° N</text>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1584" height="396" viewBox="0 0 1584 396">
+  <defs>
+    <linearGradient id="geom_base" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDF4FF" />
+      <stop offset="50%" stop-color="#EFF6FF" />
+      <stop offset="100%" stop-color="#F5F3FF" />
+    </linearGradient>
+    <linearGradient id="geom_accent1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C084FC" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#60A5FA" stop-opacity="0.15" />
+    </linearGradient>
+    <linearGradient id="geom_accent2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F472B6" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#FB7185" stop-opacity="0.1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1584" height="396" fill="url(#geom_base)" />
+
+  <!-- Floating Rings & Circles -->
+  <circle cx="1420" cy="100" r="130" fill="none" stroke="#A855F7" stroke-width="2" stroke-opacity="0.15" />
+  <circle cx="1420" cy="100" r="90" fill="none" stroke="#60A5FA" stroke-width="1.5" stroke-opacity="0.2" />
+  <circle cx="1420" cy="100" r="50" fill="url(#geom_accent1)" />
+
+  <circle cx="220" cy="300" r="160" fill="none" stroke="#F472B6" stroke-width="2" stroke-opacity="0.15" />
+  <circle cx="220" cy="300" r="110" fill="none" stroke="#818CF8" stroke-width="1.5" stroke-opacity="0.18" />
+
+  <!-- Floating Isometric Pills -->
+  <rect x="1100" y="40" width="140" height="40" rx="20" fill="url(#geom_accent1)" transform="rotate(-25 1170 60)" />
+  <rect x="750" y="320" width="160" height="44" rx="22" fill="url(#geom_accent2)" transform="rotate(-15 830 342)" />
+  <rect x="1350" y="280" width="120" height="36" rx="18" fill="url(#geom_accent1)" transform="rotate(30 1410 298)" />
+
+  <!-- Subtle Crosshairs / Accent Crosses -->
+  <g stroke="#94A3B8" stroke-width="1.5" stroke-opacity="0.35">
+    <path d="M 600 60 L 616 60 M 608 52 L 608 68" />
+    <path d="M 980 90 L 996 90 M 988 82 L 988 98" />
+    <path d="M 1250 220 L 1266 220 M 1258 212 L 1258 228" />
+    <path d="M 400 320 L 416 320 M 408 312 L 408 328" />
+  </g>
+</svg>

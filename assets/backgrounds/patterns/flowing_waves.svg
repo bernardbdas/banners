@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1584" height="396" viewBox="0 0 1584 396">
+  <defs>
+    <linearGradient id="waves_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+    <linearGradient id="wave_grad_1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.35" />
+      <stop offset="50%" stop-color="#818CF8" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#C084FC" stop-opacity="0.25" />
+    </linearGradient>
+    <linearGradient id="wave_grad_2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2DD4BF" stop-opacity="0.25" />
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0.35" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1584" height="396" fill="url(#waves_bg)" />
+
+  <!-- Ambient Light -->
+  <circle cx="1400" cy="100" r="200" fill="#38BDF8" opacity="0.05" />
+  <circle cx="200" cy="300" r="220" fill="#818CF8" opacity="0.04" />
+
+  <!-- Layered Parametric Wave Ribbons -->
+  <path d="M -50 340 C 300 240 600 420 1000 280 S 1400 180 1650 320" fill="none" stroke="url(#wave_grad_1)" stroke-width="2.5" />
+  <path d="M -50 320 C 300 220 600 400 1000 260 S 1400 160 1650 300" fill="none" stroke="url(#wave_grad_1)" stroke-width="2.0" />
+  <path d="M -50 300 C 300 200 600 380 1000 240 S 1400 140 1650 280" fill="none" stroke="url(#wave_grad_1)" stroke-width="1.8" />
+  <path d="M -50 280 C 300 180 600 360 1000 220 S 1400 120 1650 260" fill="none" stroke="url(#wave_grad_1)" stroke-width="1.5" />
+  <path d="M -50 260 C 300 160 600 340 1000 200 S 1400 100 1650 240" fill="none" stroke="url(#wave_grad_1)" stroke-width="1.2" />
+
+  <path d="M -50 380 C 350 280 650 440 1050 320 S 1450 220 1650 360" fill="none" stroke="url(#wave_grad_2)" stroke-width="2.2" />
+  <path d="M -50 220 C 320 140 620 310 1020 170 S 1420 80 1650 200" fill="none" stroke="url(#wave_grad_2)" stroke-width="1.4" />
+  <path d="M -50 180 C 340 110 640 270 1040 130 S 1440 50 1650 160" fill="none" stroke="url(#wave_grad_2)" stroke-width="1.0" />
+</svg>

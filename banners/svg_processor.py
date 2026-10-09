@@ -15,15 +15,21 @@ def extract_svg_content(path: str) -> tuple[str, str] | None:
     """Reads SVG file, extracts viewBox and inner XML markup."""
     target_path = path
     if not os.path.exists(target_path):
-        candidate = REPO_ROOT / path
-        if candidate.exists():
-            target_path = str(candidate)
-        else:
-            candidate_assets = REPO_ROOT / "assets" / path
-            if candidate_assets.exists():
-                target_path = str(candidate_assets)
-            else:
-                return None
+        clean_rel = path.replace("assets/icons/", "").replace("assets/", "").replace("icons/", "")
+        candidates = [
+            REPO_ROOT / path,
+            REPO_ROOT / "assets" / path,
+            REPO_ROOT / "assets" / "icons" / path,
+            REPO_ROOT / "assets" / "icons" / clean_rel,
+        ]
+        found = False
+        for cand in candidates:
+            if cand.exists():
+                target_path = str(cand)
+                found = True
+                break
+        if not found:
+            return None
 
     with open(target_path, encoding="utf-8", errors="ignore") as f:
         data = f.read()
@@ -85,17 +91,17 @@ def calculate_icon_dimensions(viewbox: str) -> tuple[float, float]:
             aspect = 1.0
 
     if aspect > 1.35:
-        # Wide icons (e.g. JAX, TensorFlow): expand width up to 54px
-        disp_w = min(54.0, 44.0 * aspect)
+        # Wide icons (e.g. JAX, TensorFlow): expand width up to 70px
+        disp_w = min(70.0, 52.0 * aspect)
         disp_h = disp_w / aspect
     elif aspect < 0.75:
         # Tall icons: maximize height
-        disp_h = 44.0
+        disp_h = 54.0
         disp_w = disp_h * aspect
     else:
         # Standard square-proportioned icons
-        disp_w = 45.0
-        disp_h = 45.0
+        disp_w = 56.0
+        disp_h = 56.0
 
     return disp_w, disp_h
 

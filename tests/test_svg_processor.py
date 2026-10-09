@@ -42,19 +42,19 @@ class TestSvgProcessor(unittest.TestCase):
 
     def test_calculate_icon_dimensions(self):
         """Verify dynamic scaling based on aspect ratio."""
-        # Standard square
+        # Standard square (enlarged for mobile readability)
         w, h = calculate_icon_dimensions("0 0 100 100")
-        self.assertEqual(w, 45.0)
-        self.assertEqual(h, 45.0)
+        self.assertEqual(w, 56.0)
+        self.assertEqual(h, 56.0)
 
         # Wide aspect ratio (> 1.35)
         w, h = calculate_icon_dimensions("0 0 200 100")
-        self.assertTrue(w <= 54.0)
+        self.assertTrue(w <= 70.0)
         self.assertAlmostEqual(w / h, 2.0, places=2)
 
         # Tall aspect ratio (< 0.75)
         w, h = calculate_icon_dimensions("0 0 50 100")
-        self.assertEqual(h, 44.0)
+        self.assertEqual(h, 54.0)
         self.assertAlmostEqual(w / h, 0.5, places=2)
 
     def test_process_icon(self):

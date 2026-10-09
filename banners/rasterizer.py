@@ -69,8 +69,13 @@ def rasterize_svg(
             png_path,
         ]
         subprocess.run(cmd, check=True, capture_output=True)
-        theme_dir = os.path.basename(png_dir).upper() if png_dir else "ROOT"
-        print(f"Rasterized [{theme_dir} PNG ({target_width}x{target_height})]: {png_path}")
+        parts = os.path.normpath(png_dir).split(os.sep) if png_dir else []
+        theme_tag = (
+            parts[-2].upper()
+            if len(parts) >= 2 and parts[-1].lower() in ("png", "svg")
+            else (parts[-1].upper() if parts else "ROOT")
+        )
+        print(f"Rasterized [{theme_tag} PNG ({target_width}x{target_height})]: {png_path}")
         return True
     except subprocess.CalledProcessError as e:
         err_msg = e.stderr.decode("utf-8", errors="ignore")

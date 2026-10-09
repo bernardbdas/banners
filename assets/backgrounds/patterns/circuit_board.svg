@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1584" height="396" viewBox="0 0 1584 396">
+  <defs>
+    <linearGradient id="circuit_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040812" />
+      <stop offset="50%" stop-color="#0A1124" />
+      <stop offset="100%" stop-color="#02040A" />
+    </linearGradient>
+    <linearGradient id="trace_glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#818CF8" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1584" height="396" fill="url(#circuit_bg)" />
+
+  <!-- Ambient Glow -->
+  <circle cx="1400" cy="80" r="180" fill="#38BDF8" opacity="0.06" />
+  <circle cx="200" cy="300" r="200" fill="#818CF8" opacity="0.05" />
+
+  <!-- Circuit Traces & Bus Lines (45-degree angles) -->
+  <g fill="none" stroke="url(#trace_glow)" stroke-width="1.5">
+    <!-- Trace 1 -->
+    <path d="M 0 100 L 250 100 L 320 170 L 600 170 L 640 130 L 900 130" />
+    <!-- Trace 2 -->
+    <path d="M 0 140 L 220 140 L 290 210 L 550 210" />
+    <!-- Trace 3 -->
+    <path d="M 1200 40 L 1300 40 L 1380 120 L 1584 120" />
+    <!-- Trace 4 -->
+    <path d="M 1050 80 L 1180 80 L 1260 160 L 1450 160 L 1500 210 L 1584 210" />
+    <!-- Trace 5 -->
+    <path d="M 1150 350 L 1280 350 L 1340 290 L 1500 290 L 1584 290" />
+    <!-- Trace 6 -->
+    <path d="M 50 380 L 300 380 L 380 300 L 650 300 L 710 360 L 950 360" />
+    <!-- Trace 7 -->
+    <path d="M 750 30 L 850 30 L 900 80 L 1100 80" />
+  </g>
+
+  <!-- Secondary Faint Sub-Traces -->
+  <g fill="none" stroke="#38BDF8" stroke-width="1.0" stroke-opacity="0.15">
+    <path d="M 0 60 L 180 60 L 240 120 L 450 120" />
+    <path d="M 1350 240 L 1420 240 L 1480 180 L 1584 180" />
+    <path d="M 850 396 L 900 346 L 1050 346" />
+    <path d="M 400 396 L 450 346 L 580 346" />
+  </g>
+
+  <!-- Circuit Nodes / Via Pins (Circles at trace endpoints) -->
+  <g fill="#38BDF8" stroke="#040812" stroke-width="2">
+    <circle cx="900" cy="130" r="4.5" />
+    <circle cx="550" cy="210" r="4.5" />
+    <circle cx="1200" cy="40" r="4.5" />
+    <circle cx="1150" cy="350" r="4.5" />
+    <circle cx="950" cy="360" r="4.5" />
+    <circle cx="1100" cy="80" r="4.5" />
+    <circle cx="450" cy="120" r="4" fill="#818CF8" />
+    <circle cx="1050" cy="346" r="4" fill="#818CF8" />
+  </g>
+</svg>

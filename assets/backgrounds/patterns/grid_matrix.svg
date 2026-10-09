@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1584" height="396" viewBox="0 0 1584 396">
+  <defs>
+    <linearGradient id="grid_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080D1A" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#050814" />
+    </linearGradient>
+    <pattern id="matrix_grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M 44 0 L 0 0 0 44" fill="none" stroke="#38BDF8" stroke-width="0.8" stroke-opacity="0.12" />
+      <circle cx="0" cy="0" r="1.5" fill="#38BDF8" opacity="0.25" />
+    </pattern>
+    <linearGradient id="grid_accent_glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.1" />
+      <stop offset="50%" stop-color="#818CF8" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.05" />
+    </linearGradient>
+  </defs>
+
+  <!-- Base Canvas -->
+  <rect width="1584" height="396" fill="url(#grid_bg)" />
+
+  <!-- Ambient Glow -->
+  <circle cx="1380" cy="80" r="220" fill="#38BDF8" opacity="0.05" />
+  <circle cx="450" cy="300" r="260" fill="#818CF8" opacity="0.04" />
+
+  <!-- Tech Grid Overlay -->
+  <rect width="1584" height="396" fill="url(#matrix_grid)" />
+
+  <!-- Perspective / Glow Horizon -->
+  <rect x="0" y="240" width="1584" height="156" fill="url(#grid_accent_glow)" />
+
+  <!-- Precision Blueprint Crosshairs and Target Nodes -->
+  <g stroke="#38BDF8" stroke-width="1.2" stroke-opacity="0.4">
+    <path d="M 1320 88 L 1320 68 M 1320 88 L 1320 108 M 1320 88 L 1300 88 M 1320 88 L 1340 88" />
+    <circle cx="1320" cy="88" r="8" fill="none" stroke="#38BDF8" stroke-width="1" stroke-opacity="0.3" />
+    <circle cx="1320" cy="88" r="3" fill="#38BDF8" opacity="0.5" />
+
+    <path d="M 704 220 L 704 200 M 704 220 L 704 240 M 704 220 L 684 220 M 704 220 L 724 220" />
+    <circle cx="704" cy="220" r="6" fill="none" stroke="#818CF8" stroke-width="1" stroke-opacity="0.3" />
+
+    <path d="M 176 132 L 176 112 M 176 132 L 176 152 M 176 132 L 156 132 M 176 132 L 196 132" />
+  </g>
+
+  <!-- Technical Code / Coordinate Labels -->
+  <text x="1450" y="40" font-family="monospace" font-size="11" fill="#38BDF8" opacity="0.3" letter-spacing="2">SYS.NODE // 44.19.0</text>
+  <text x="60" y="360" font-family="monospace" font-size="11" fill="#818CF8" opacity="0.25" letter-spacing="2">LOC // 1584x396_PX</text>
+</svg>

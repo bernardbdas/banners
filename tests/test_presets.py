@@ -45,9 +45,11 @@ class TestThemes(unittest.TestCase):
     """Test suite for THEMES definitions."""
 
     def test_required_themes_exist(self):
-        """Verify standard themes (dark, light) are configured."""
+        """Verify standard themes are configured."""
         self.assertIn("dark", THEMES)
         self.assertIn("light", THEMES)
+        self.assertIn("network_nodes", THEMES)
+        self.assertIn("linkedin", THEMES)
 
     def test_theme_attributes(self):
         """Verify all themes define necessary styling tokens."""
