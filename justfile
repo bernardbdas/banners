@@ -58,6 +58,21 @@ topographical-cyber format="all":
 topographical-vintage format="all":
     python3 -m banners all topographical_vintage {{format}}
 
+topographical-papercut format="all":
+    python3 -m banners all topographical_papercut {{format}}
+
+topographical-particles format="all":
+    python3 -m banners all topographical_particles {{format}}
+
+topographical-midnight format="all":
+    python3 -m banners all topographical_midnight {{format}}
+
+topographical-oceanic format="all":
+    python3 -m banners all topographical_oceanic {{format}}
+
+topographical-cartographic format="all":
+    python3 -m banners all topographical_cartographic {{format}}
+
 dark format="all":
     python3 -m banners all dark {{format}}
 

@@ -44,6 +44,23 @@ BACKGROUND_ALIASES: dict[str, str] = {
     "vintage": "topographical_vintage",
     "topographical_parchment": "topographical_vintage",
     "parchment_topo": "topographical_vintage",
+    "papercut": "topographical_papercut",
+    "paper_cut": "topographical_papercut",
+    "paper_relief": "topographical_papercut",
+    "particles": "topographical_particles",
+    "particle_grid": "topographical_particles",
+    "point_cloud": "topographical_particles",
+    "lidar": "topographical_particles",
+    "midnight": "topographical_midnight",
+    "midnight_topo": "topographical_midnight",
+    "slate_topo": "topographical_midnight",
+    "oceanic": "topographical_oceanic",
+    "azure_topo": "topographical_oceanic",
+    "oceanic_topo": "topographical_oceanic",
+    "cartographic": "topographical_cartographic",
+    "alpine": "topographical_cartographic",
+    "alpine_topo": "topographical_cartographic",
+    "mono_topo": "topographical_cartographic",
 }
 
 

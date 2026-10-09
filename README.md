@@ -132,6 +132,11 @@ Background SVGs are located in `assets/backgrounds/`. Any background file can be
 - `topographical_crimson_light`: Soft porcelain ivory canvas with drop-shadowed laser-cut crimson isolines (aliases: `crimson_light`, `blood_red_light`).
 - `topographical_cyber`: Dual-tone neon cyan & hot magenta isolines over midnight obsidian (aliases: `cyber`, `neon_topo`).
 - `topographical_vintage`: Warm aged parchment with surveyor coordinate grid & bistre contour lines (aliases: `vintage`, `parchment_topo`).
+- `topographical_papercut`: 3D layered paper-cut stepped relief with realistic drop shadows (aliases: `papercut`, `paper_relief`).
+- `topographical_particles`: 3D undulating LiDAR point-cloud perspective particle terrain over midnight obsidian (aliases: `particles`, `point_cloud`, `lidar`).
+- `topographical_midnight`: Deep midnight slate canvas with crisp, brilliant white/silver contour isolines (aliases: `midnight`, `midnight_topo`).
+- `topographical_oceanic`: Vibrant cobalt to oceanic navy gradient with pure white contour loops (aliases: `oceanic`, `azure_topo`).
+- `topographical_cartographic`: Ultra-fine authentic monochrome USGS/Alpine contour map with heavy index lines (aliases: `cartographic`, `alpine`, `mono_topo`).
 - `topographical_light`: Minimalist clean white/slate elevation contour map.
 - `topographical_pastel`: Contour relief over a soft pastel gradient.
 - `topographical_dense`: High-density alpine terrain contour lines.

@@ -137,6 +137,16 @@ class TestGenerator(unittest.TestCase):
             "cyber",
             "topographical_vintage",
             "vintage",
+            "topographical_papercut",
+            "papercut",
+            "topographical_particles",
+            "particles",
+            "topographical_midnight",
+            "midnight",
+            "topographical_oceanic",
+            "oceanic",
+            "topographical_cartographic",
+            "cartographic",
         ):
             svg_content = build_banner_svg("backend", t)
             self.assertIn("Custom Background", svg_content)

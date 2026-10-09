@@ -61,6 +61,16 @@ class TestThemes(unittest.TestCase):
         self.assertIn("cyber", THEMES)
         self.assertIn("topographical_vintage", THEMES)
         self.assertIn("vintage", THEMES)
+        self.assertIn("topographical_papercut", THEMES)
+        self.assertIn("papercut", THEMES)
+        self.assertIn("topographical_particles", THEMES)
+        self.assertIn("particles", THEMES)
+        self.assertIn("topographical_midnight", THEMES)
+        self.assertIn("midnight", THEMES)
+        self.assertIn("topographical_oceanic", THEMES)
+        self.assertIn("oceanic", THEMES)
+        self.assertIn("topographical_cartographic", THEMES)
+        self.assertIn("cartographic", THEMES)
 
     def test_theme_attributes(self):
         """Verify all themes define necessary styling tokens."""

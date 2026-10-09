@@ -203,6 +203,96 @@ THEMES: dict[str, dict[str, Any]] = {
         "ambient_2": "#78350F",
         "ambient_2_op": "0.06",
     },
+    "topographical_papercut": {
+        "bg_stops": [("0%", "#D9E2EC"), ("50%", "#E2E8F0"), ("100%", "#CBD5E1")],
+        "card_stops": [("0%", "#FFFFFF", "0.96"), ("100%", "#F8FAFC", "0.92")],
+        "card_stroke": "#CBD5E1",
+        "card_shadow_flood": "#0F172A",
+        "card_shadow_opacity": "0.15",
+        "card_shadow_blur": "10",
+        "title_color": "#0F172A",
+        "subtitle_color": "#334155",
+        "badge_text_color": "#0F172A",
+        "contact_text_color": "#0F172A",
+        "contact_icon_color": "#2563EB",
+        "accent_stops": [("0%", "#3B82F6"), ("50%", "#1D4ED8"), ("100%", "#0F172A")],
+        "ambient_1": "#3B82F6",
+        "ambient_1_op": "0.06",
+        "ambient_2": "#60A5FA",
+        "ambient_2_op": "0.04",
+    },
+    "topographical_particles": {
+        "bg_stops": [("0%", "#020408"), ("50%", "#050811"), ("100%", "#010204")],
+        "card_stops": [("0%", "#0A0F1D", "0.88"), ("100%", "#03060E", "0.88")],
+        "card_stroke": "#38BDF8",
+        "card_shadow_flood": "#000000",
+        "card_shadow_opacity": "0.70",
+        "card_shadow_blur": "12",
+        "title_color": "#FFFFFF",
+        "subtitle_color": "#94A3B8",
+        "badge_text_color": "#E2E8F0",
+        "contact_text_color": "#FFFFFF",
+        "contact_icon_color": "#38BDF8",
+        "accent_stops": [("0%", "#FFFFFF"), ("50%", "#38BDF8"), ("100%", "#0284C7")],
+        "ambient_1": "#38BDF8",
+        "ambient_1_op": "0.18",
+        "ambient_2": "#818CF8",
+        "ambient_2_op": "0.12",
+    },
+    "topographical_midnight": {
+        "bg_stops": [("0%", "#080C16"), ("50%", "#0E1626"), ("100%", "#060913")],
+        "card_stops": [("0%", "#111827", "0.88"), ("100%", "#0B0F19", "0.88")],
+        "card_stroke": "#475569",
+        "card_shadow_flood": "#000000",
+        "card_shadow_opacity": "0.65",
+        "card_shadow_blur": "10",
+        "title_color": "#FFFFFF",
+        "subtitle_color": "#CBD5E1",
+        "badge_text_color": "#F1F5F9",
+        "contact_text_color": "#FFFFFF",
+        "contact_icon_color": "#F8FAFC",
+        "accent_stops": [("0%", "#FFFFFF"), ("50%", "#CBD5E1"), ("100%", "#94A3B8")],
+        "ambient_1": "#FFFFFF",
+        "ambient_1_op": "0.08",
+        "ambient_2": "#94A3B8",
+        "ambient_2_op": "0.06",
+    },
+    "topographical_oceanic": {
+        "bg_stops": [("0%", "#1D4ED8"), ("45%", "#1E40AF"), ("100%", "#0F172A")],
+        "card_stops": [("0%", "#172554", "0.88"), ("100%", "#0F172A", "0.88")],
+        "card_stroke": "#60A5FA",
+        "card_shadow_flood": "#020617",
+        "card_shadow_opacity": "0.60",
+        "card_shadow_blur": "10",
+        "title_color": "#FFFFFF",
+        "subtitle_color": "#BFDBFE",
+        "badge_text_color": "#EFF6FF",
+        "contact_text_color": "#FFFFFF",
+        "contact_icon_color": "#93C5FD",
+        "accent_stops": [("0%", "#93C5FD"), ("50%", "#38BDF8"), ("100%", "#1D4ED8")],
+        "ambient_1": "#60A5FA",
+        "ambient_1_op": "0.20",
+        "ambient_2": "#93C5FD",
+        "ambient_2_op": "0.14",
+    },
+    "topographical_cartographic": {
+        "bg_stops": [("0%", "#FFFFFF"), ("50%", "#FAFAFA"), ("100%", "#F8FAFC")],
+        "card_stops": [("0%", "#FFFFFF", "0.96"), ("100%", "#F8FAFC", "0.94")],
+        "card_stroke": "#E4E4E7",
+        "card_shadow_flood": "#18181B",
+        "card_shadow_opacity": "0.10",
+        "card_shadow_blur": "8",
+        "title_color": "#09090B",
+        "subtitle_color": "#3F3F46",
+        "badge_text_color": "#18181B",
+        "contact_text_color": "#09090B",
+        "contact_icon_color": "#18181B",
+        "accent_stops": [("0%", "#27272A"), ("50%", "#18181B"), ("100%", "#09090B")],
+        "ambient_1": "#18181B",
+        "ambient_1_op": "0.04",
+        "ambient_2": "#27272A",
+        "ambient_2_op": "0.03",
+    },
 }
 
 # Aliases for convenience
@@ -228,6 +318,23 @@ THEMES["neon_topo"] = THEMES["topographical_cyber"]
 THEMES["vintage"] = THEMES["topographical_vintage"]
 THEMES["topographical_parchment"] = THEMES["topographical_vintage"]
 THEMES["parchment_topo"] = THEMES["topographical_vintage"]
+THEMES["papercut"] = THEMES["topographical_papercut"]
+THEMES["paper_cut"] = THEMES["topographical_papercut"]
+THEMES["paper_relief"] = THEMES["topographical_papercut"]
+THEMES["particles"] = THEMES["topographical_particles"]
+THEMES["particle_grid"] = THEMES["topographical_particles"]
+THEMES["point_cloud"] = THEMES["topographical_particles"]
+THEMES["lidar"] = THEMES["topographical_particles"]
+THEMES["midnight"] = THEMES["topographical_midnight"]
+THEMES["midnight_topo"] = THEMES["topographical_midnight"]
+THEMES["slate_topo"] = THEMES["topographical_midnight"]
+THEMES["oceanic"] = THEMES["topographical_oceanic"]
+THEMES["azure_topo"] = THEMES["topographical_oceanic"]
+THEMES["oceanic_topo"] = THEMES["topographical_oceanic"]
+THEMES["cartographic"] = THEMES["topographical_cartographic"]
+THEMES["alpine"] = THEMES["topographical_cartographic"]
+THEMES["alpine_topo"] = THEMES["topographical_cartographic"]
+THEMES["mono_topo"] = THEMES["topographical_cartographic"]
 
 
 def get_available_themes() -> list[str]:
